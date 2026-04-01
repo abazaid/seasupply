@@ -60,6 +60,7 @@ export default function HomePage() {
 
   return (
     <div className="space-y-10">
+      <script type="text/javascript" src="http://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=157515dcf6449fa9eb52c19cea373aeb662b52d8"></script>
       <HeroSection />
 
       <section className="rounded-3xl border border-slate-200 bg-white p-6 md:p-8">

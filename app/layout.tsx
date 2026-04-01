@@ -1,6 +1,5 @@
 ﻿import type { Metadata } from "next";
 import { Manrope, Source_Serif_4 } from "next/font/google";
-import Script from "next/script";
 import "@/app/globals.css";
 import { AnnouncementBar } from "@/components/layout/announcement-bar";
 import { SiteFooter } from "@/components/layout/site-footer";
@@ -47,11 +46,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className={`${sans.variable} ${serif.variable}`}>
       <body className="font-[var(--font-sans)] antialiased">
-        <Script
-          id="avantlink-verification-temp"
-          strategy="beforeInteractive"
-          src="https://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=157515dcf6449fa9eb52c19cea373aeb662b52d8"
-        />
         <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus:z-[70] focus:rounded-md focus:bg-white focus:px-3 focus:py-2">
           Skip to content
         </a>
