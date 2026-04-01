@@ -10,12 +10,23 @@ import { articles, getBrandBySlug, getProductBySlug, getRelatedProducts, product
 import { breadcrumbSchema, faqSchema, productSchema } from "@/lib/schema";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 
+type ProductParams = { slug: string };
+
+function resolveParams(params: ProductParams | Promise<ProductParams>) {
+  return Promise.resolve(params);
+}
+
 export function generateStaticParams() {
   return products.map((product) => ({ slug: product.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const product = getProductBySlug(params.slug);
+export async function generateMetadata({
+  params,
+}: {
+  params: ProductParams | Promise<ProductParams>;
+}) {
+  const resolved = await resolveParams(params);
+  const product = getProductBySlug(resolved.slug);
   if (!product) {
     return buildMetadata({ title: "Product Not Found", description: "Product not found.", path: "/categories" });
   }
@@ -28,13 +39,19 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   });
 }
 
-export default function ProductPage({ params }: { params: { slug: string } }) {
-  const product = getProductBySlug(params.slug);
+export default async function ProductPage({
+  params,
+}: {
+  params: ProductParams | Promise<ProductParams>;
+}) {
+  const resolved = await resolveParams(params);
+  const product = getProductBySlug(resolved.slug);
   if (!product) notFound();
 
   const brand = getBrandBySlug(product.brandSlug);
   const relatedProducts = getRelatedProducts(product.relatedProductSlugs);
   const relatedGuides = articles.filter((item) => product.relatedGuideSlugs.includes(item.slug));
+  const gallery = product.images.length > 0 ? product.images : ["/images/products/placeholder-product-1.svg"];
 
   const faqItems = [
     {
@@ -54,7 +71,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
           name: product.name,
           description: product.longDescription,
           sku: product.sku,
-          image: product.images.map((img) => absoluteUrl(img)),
+          image: gallery.map((img) => absoluteUrl(img)),
           brand: brand?.name ?? product.brandSlug,
           url: absoluteUrl(`/products/${product.slug}`),
         })}
@@ -79,10 +96,16 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
       <section className="grid gap-6 lg:grid-cols-[1fr_360px]">
         <div className="space-y-4 rounded-2xl border border-slate-200 bg-white p-6">
           <div className="grid gap-3 md:grid-cols-2">
-            <div className="aspect-[16/9] rounded-xl bg-gradient-to-br from-slate-100 to-slate-200" aria-hidden="true" />
+            <div className="relative aspect-[16/9] overflow-hidden rounded-xl bg-gradient-to-br from-slate-100 to-slate-200">
+              <Image src={gallery[0]} alt={`${product.name} main image`} fill className="object-cover" />
+            </div>
             <div className="space-y-3">
-              <div className="aspect-[16/9] rounded-xl bg-gradient-to-br from-slate-100 to-slate-200" aria-hidden="true" />
-              <div className="aspect-[16/9] rounded-xl bg-gradient-to-br from-slate-100 to-slate-200" aria-hidden="true" />
+              <div className="relative aspect-[16/9] overflow-hidden rounded-xl bg-gradient-to-br from-slate-100 to-slate-200">
+                <Image src={gallery[1] || gallery[0]} alt={`${product.name} alternate image`} fill className="object-cover" />
+              </div>
+              <div className="relative aspect-[16/9] overflow-hidden rounded-xl bg-gradient-to-br from-slate-100 to-slate-200">
+                <Image src={gallery[2] || gallery[0]} alt={`${product.name} detail image`} fill className="object-cover" />
+              </div>
             </div>
           </div>
           <h1 className="text-3xl font-semibold text-slate-900">{product.name}</h1>

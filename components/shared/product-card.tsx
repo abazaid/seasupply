@@ -1,13 +1,24 @@
-﻿import Link from "next/link";
+﻿import Image from "next/image";
+import Link from "next/link";
 import type { Product } from "@/types";
 
 export function ProductCard({ product }: { product: Product }) {
   return (
     <article className="group rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:shadow-md">
-      <div className="mb-4 aspect-[4/3] rounded-lg bg-gradient-to-br from-slate-100 to-slate-200" aria-hidden="true" />
+      <div className="relative mb-4 aspect-[4/3] overflow-hidden rounded-lg bg-gradient-to-br from-slate-100 to-slate-200">
+        <Image
+          src={product.images[0] || "/images/products/placeholder-product-1.svg"}
+          alt={`${product.name} product image`}
+          fill
+          className="object-cover transition duration-300 group-hover:scale-105"
+        />
+      </div>
       <p className="text-xs font-semibold uppercase tracking-wide text-sky-700">{product.sku}</p>
       <h3 className="mt-1 text-lg font-semibold text-slate-900">
-        <Link href={`/products/${product.slug}`} className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-700">
+        <Link
+          href={`/products/${product.slug}`}
+          className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-700"
+        >
           {product.name}
         </Link>
       </h3>
