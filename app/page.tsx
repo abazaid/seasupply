@@ -47,11 +47,11 @@ const topCollections = [
 ];
 
 export const metadata = buildMetadata({
-  title: "Marine Ecommerce Affiliate Store for US Boaters",
+  title: "Marine Ecommerce marketplace Store for US Boaters",
   description:
     "Shop Sea Supply Hub for marine electronics, safety gear, maintenance essentials, and expert buying guides with trusted partner links.",
   path: "/",
-  keywords: ["marine supplies", "boat electronics", "boating safety", "affiliate marine store"],
+  keywords: ["marine supplies", "boat electronics", "boating safety", "marine store"],
 });
 
 export default function HomePage() {
@@ -173,10 +173,11 @@ export default function HomePage() {
         <h2 className="text-2xl font-semibold text-slate-900">Marine Buying Intelligence for US Boaters</h2>
         <p className="mt-3 text-slate-700">
           Sea Supply Hub combines deep category architecture, product specification clarity, and practical educational content so boat owners can compare with confidence.
-          Our affiliate model keeps pages content-rich and transparent while sending purchase traffic to established marine partners.
+          Our marketplace model keeps pages content-rich and transparent while sending purchase traffic to established marine partners.
           Every category and brand page is built with crawlable internal linking, clean metadata, and schema coverage for stronger search visibility.
         </p>
       </section>
     </div>
   );
 }
+

@@ -94,5 +94,5 @@ export interface FaqItem {
   id: string;
   question: string;
   answer: string;
-  group: "global" | "category" | "affiliate";
+  group: "global" | "category" | "marketplace";
 }

@@ -9,5 +9,5 @@ export interface CartSnapshot {
   updatedAt: string;
 }
 
-// Affiliate-first today: these types prepare a future native cart/checkout layer
+// Marketplace-first today: these types prepare a future native cart/checkout layer
 // without requiring route-level refactoring.

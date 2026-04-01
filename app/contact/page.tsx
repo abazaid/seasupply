@@ -11,7 +11,7 @@ export default function ContactPage() {
   return (
     <SimplePage
       title="Contact"
-      intro="Need help with a product guide, affiliate link, or content correction? Reach our support and editorial team."
+      intro="Need help with a product guide, marketplace link, or content correction? Reach our support and editorial team."
     >
       <ul className="space-y-2 text-slate-700">
         <li>Email: support@seasupplyhub.com</li>
@@ -21,3 +21,4 @@ export default function ContactPage() {
     </SimplePage>
   );
 }
+

@@ -9,8 +9,8 @@ export function UtilityBar() {
           <Link href="/help-center" className="hover:text-white">
             Help Center
           </Link>
-          <Link href="/affiliate-disclosure" className="hover:text-white">
-            Affiliate Disclosure
+          <Link href="/marketplace-disclosure" className="hover:text-white">
+            Marketplace Disclosure
           </Link>
           <span>Account (coming soon)</span>
         </div>
@@ -18,3 +18,5 @@ export function UtilityBar() {
     </div>
   );
 }
+
+

@@ -5,6 +5,7 @@
   locale: "en_US",
   market: "United States",
   description:
-    "Sea Supply Hub is an affiliate-first marine ecommerce platform with deep category coverage, product research content, and trusted partner links.",
+    "Sea Supply Hub is a marketplace-first marine ecommerce platform with deep category coverage, product research content, and trusted partner links.",
   supportEmail: "support@seasupplyhub.com",
 };
+

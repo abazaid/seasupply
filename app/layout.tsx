@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,
-  category: "Marine Ecommerce Affiliate",
+  category: "Marine Ecommerce marketplace",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
@@ -53,3 +53,4 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     </html>
   );
 }
+

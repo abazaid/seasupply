@@ -7,16 +7,20 @@ export function generateStaticParams() {
   return articles.filter((article) => article.type === "buying-guide").map((article) => ({ slug: article.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const article = getArticleBySlug(params.slug);
+type BuyingGuideParams = { slug: string };
+
+export async function generateMetadata({ params }: { params: BuyingGuideParams | Promise<BuyingGuideParams> }) {
+  const { slug } = await Promise.resolve(params);
+  const article = getArticleBySlug(slug);
   if (!article || article.type !== "buying-guide") {
     return buildMetadata({ title: "Guide Not Found", description: "Guide not found.", path: "/resources/buying-guides" });
   }
   return buildMetadata({ title: article.title, description: article.excerpt, path: `/resources/buying-guides/${article.slug}` });
 }
 
-export default function BuyingGuideDetailPage({ params }: { params: { slug: string } }) {
-  const article = getArticleBySlug(params.slug);
+export default async function BuyingGuideDetailPage({ params }: { params: BuyingGuideParams | Promise<BuyingGuideParams> }) {
+  const { slug } = await Promise.resolve(params);
+  const article = getArticleBySlug(slug);
   if (!article || article.type !== "buying-guide") notFound();
   return <ArticleDetail article={article} pathPrefix="/resources/buying-guides" />;
 }

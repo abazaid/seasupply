@@ -9,7 +9,7 @@ export function SiteFooter() {
           <div>
             <h2 className="text-lg font-semibold">Sea Supply Hub</h2>
             <p className="mt-3 text-sm text-slate-300">
-              Affiliate-first marine commerce platform built for high-intent buyers who need clear specs,
+              marketplace-first marine commerce platform built for high-intent buyers who need clear specs,
               practical guidance, and trusted partner links.
             </p>
           </div>
@@ -40,7 +40,7 @@ export function SiteFooter() {
             <ul className="mt-3 space-y-1 text-sm text-slate-300">
               <li><Link href="/about">About Us</Link></li>
               <li><Link href="/contact">Contact</Link></li>
-              <li><Link href="/affiliate-disclosure">Affiliate Disclosure</Link></li>
+              <li><Link href="/marketplace-disclosure">Marketplace Disclosure</Link></li>
               <li><Link href="/privacy-policy">Privacy Policy</Link></li>
               <li><Link href="/terms-of-service">Terms of Service</Link></li>
             </ul>
@@ -55,3 +55,5 @@ export function SiteFooter() {
     </footer>
   );
 }
+
+

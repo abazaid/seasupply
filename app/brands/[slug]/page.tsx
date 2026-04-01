@@ -11,19 +11,23 @@ export function generateStaticParams() {
   return brands.map((brand) => ({ slug: brand.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const brand = getBrandBySlug(params.slug);
+type BrandPageParams = { slug: string };
+
+export async function generateMetadata({ params }: { params: BrandPageParams | Promise<BrandPageParams> }) {
+  const { slug } = await Promise.resolve(params);
+  const brand = getBrandBySlug(slug);
   if (!brand) return buildMetadata({ title: "Brand Not Found", description: "Brand not found.", path: "/brands" });
   return buildMetadata({
     title: `${brand.name} Marine Products`,
     description: `${brand.name} products, specs, buying guidance, and partner purchase links on Sea Supply Hub.`,
     path: `/brands/${brand.slug}`,
-    keywords: [brand.name, "marine brand", "boat products", "affiliate marine store"],
+    keywords: [brand.name, "marine brand", "boat products", "marine marketplace"],
   });
 }
 
-export default function BrandPage({ params }: { params: { slug: string } }) {
-  const brand = getBrandBySlug(params.slug);
+export default async function BrandPage({ params }: { params: BrandPageParams | Promise<BrandPageParams> }) {
+  const { slug } = await Promise.resolve(params);
+  const brand = getBrandBySlug(slug);
   if (!brand) notFound();
 
   const brandProducts = getProductsByBrand(brand.slug);

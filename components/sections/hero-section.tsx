@@ -11,7 +11,7 @@ export function HeroSection() {
       </h1>
       <p className="mt-4 max-w-2xl text-sky-100">
         Sea Supply Hub delivers enterprise-grade marine product discovery with deep category coverage,
-        buying guides, and affiliate-ready partner links.
+        buying guides, and commerce-ready partner links.
       </p>
       <div className="mt-7 flex flex-wrap gap-3">
         <Link href="/categories" className="rounded-lg bg-orange-500 px-5 py-3 text-sm font-semibold text-white hover:bg-orange-400">
@@ -24,3 +24,4 @@ export function HeroSection() {
     </section>
   );
 }
+

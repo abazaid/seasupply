@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Sea Supply Hub",
     short_name: "SeaSupplyHub",
-    description: "Affiliate-first marine ecommerce platform for US boaters.",
+    description: "marketplace-first marine ecommerce platform for US boaters.",
     start_url: "/",
     display: "standalone",
     background_color: "#f8fafc",
@@ -12,3 +12,4 @@ export default function manifest(): MetadataRoute.Manifest {
     icons: [{ src: "/images/logo-mark.svg", sizes: "160x32", type: "image/svg+xml" }],
   };
 }
+

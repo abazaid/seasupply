@@ -11,7 +11,7 @@ const links = [
   "/resources",
   "/faq",
   "/help-center",
-  "/affiliate-disclosure",
+  "/marketplace-disclosure",
   "/privacy-policy",
   "/terms-of-service",
 ];
@@ -38,3 +38,4 @@ export default function HtmlSitemapPage() {
     </section>
   );
 }
+

@@ -1,6 +1,6 @@
 ﻿# Sea Supply Hub
 
-Production-ready affiliate-first marine ecommerce website built with Next.js App Router, TypeScript, Tailwind CSS, and SEO-first architecture.
+Production-ready marketplace-first marine ecommerce website built with Next.js App Router, TypeScript, Tailwind CSS, and SEO-first architecture.
 
 ## Stack
 
@@ -39,8 +39,9 @@ Copy `.env.example` to `.env.local` and update values.
 - `data/seed/*.json` contains categories, products, brands, articles, FAQs.
 - `data/loaders.ts` validates and hydrates seed data with Zod.
 
-## Affiliate Model
+## marketplace model
 
 - Product pages use outbound partner CTAs only.
 - No native cart/checkout implemented yet.
 - Data model already includes hooks for multiple partners and future commerce expansion.
+

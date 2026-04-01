@@ -1,7 +1,7 @@
 ﻿export function TrustBadges() {
   const badges = [
     "Curated by marine specialists",
-    "Affiliate transparency on every listing",
+    "marketplace transparency on every listing",
     "Fast category-to-product research flow",
     "US-focused support content",
   ];
@@ -19,3 +19,4 @@
     </section>
   );
 }
+

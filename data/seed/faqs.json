@@ -21,7 +21,8 @@
   {"id":"faq-apparel-1","question":"What should I look for in foul-weather gear?","answer":"Waterproof rating, seam construction, breathability, and mobility are key factors.","group":"category"},
   {"id":"faq-gifts-1","question":"What are practical marine gift ideas?","answer":"Safety upgrades, maintenance kits, and navigation accessories are common high-value choices.","group":"category"},
   {"id":"faq-deals-1","question":"How often are deal pages updated?","answer":"Deal pages are refreshed frequently, and availability can change based on partner inventory.","group":"category"},
-  {"id":"faq-resources-1","question":"Are your guides brand-biased?","answer":"Our guides are built around practical fit and use-case matching, with transparent affiliate disclosure.","group":"category"},
-  {"id":"faq-affiliate-1","question":"Does Sea Supply Hub sell products directly?","answer":"Not at this stage. We provide research and affiliate links to partner merchants for checkout.","group":"affiliate"},
+  {"id":"faq-resources-1","question":"Are your guides brand-biased?","answer":"Our guides are built around practical fit and use-case matching, with transparent Marketplace Disclosure.","group":"category"},
+  {"id":"faq-marketplace-1","question":"Does Sea Supply Hub sell products directly?","answer":"Not at this stage. We provide research and trusted outbound links to partner merchants for checkout.","group":"marketplace"},
   {"id":"faq-global-1","question":"Do partner prices change frequently?","answer":"Yes. Product pages include a last-checked date, but live pricing and inventory can change quickly.","group":"global"}
 ]
+

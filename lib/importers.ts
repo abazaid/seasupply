@@ -8,7 +8,7 @@ export interface ExternalProductRecord {
   category: string;
   subcategory: string;
   description: string;
-  affiliateUrl: string;
+  partnerUrl: string;
 }
 
 export interface ImportAdapter {
@@ -37,11 +37,11 @@ export function mapExternalRecordToProduct(record: ExternalProductRecord): Produ
     cons: ["Pending enrichment"],
     specs: [{ label: "Source", value: "Imported feed" }],
     compatibility: ["See partner listing"],
-    images: ["/images/placeholder-product-1.jpg"],
+    images: ["/images/products/placeholder-product-1.svg"],
     partnerLinks: [
       {
         label: "Check Price",
-        url: record.affiliateUrl,
+        url: record.partnerUrl,
         network: "TBD",
         merchant: "Imported Merchant",
         lastChecked: new Date().toISOString().slice(0, 10),

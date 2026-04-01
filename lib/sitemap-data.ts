@@ -6,7 +6,7 @@ export const staticPages = [
   "/contact",
   "/shipping-delivery",
   "/returns-policy",
-  "/affiliate-disclosure",
+  "/marketplace-disclosure",
   "/privacy-policy",
   "/terms-of-service",
   "/accessibility-statement",
@@ -38,3 +38,5 @@ export const articlePaths = articles.map((article) =>
       : `/resources/blog/${article.slug}`,
 );
 export const brandPaths = brands.map((brand) => `/brands/${brand.slug}`);
+
+

@@ -100,5 +100,5 @@ export const faqSchema = z.object({
   id: z.string(),
   question: z.string(),
   answer: z.string(),
-  group: z.enum(["global", "category", "affiliate"]),
+  group: z.enum(["global", "category", "marketplace"]),
 });

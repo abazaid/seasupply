@@ -3,16 +3,16 @@
 import { ExternalLink } from "lucide-react";
 import { useCallback } from "react";
 
-interface AffiliateButtonProps {
+interface OutboundButtonProps {
   href: string;
   label: string;
 }
 
-export function AffiliateButton({ href, label }: AffiliateButtonProps) {
+export function OutboundButton({ href, label }: OutboundButtonProps) {
   const onClick = useCallback(() => {
     if (typeof window !== "undefined") {
       window.dispatchEvent(
-        new CustomEvent("affiliate_click", {
+        new CustomEvent("outbound_click", {
           detail: { href, at: Date.now() },
         }),
       );

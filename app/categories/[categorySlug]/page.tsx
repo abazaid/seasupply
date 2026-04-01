@@ -47,7 +47,7 @@ export async function generateMetadata({
       `${category.name} marine products`,
       "boat parts",
       "marine equipment",
-      "affiliate marine store",
+      "marine store",
     ],
   });
 }
@@ -179,3 +179,4 @@ export default async function CategoryPage({
     </div>
   );
 }
+

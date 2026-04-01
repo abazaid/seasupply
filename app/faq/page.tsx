@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   title: "Marine FAQ Hub",
-  description: "Answers to common marine product, safety, and affiliate shopping questions.",
+  description: "Answers to common marine product, safety, and marketplace shopping questions.",
   path: "/faq",
 });
 
@@ -18,3 +18,4 @@ export default function FaqPage() {
     </section>
   );
 }
+

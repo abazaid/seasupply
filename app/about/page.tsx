@@ -11,12 +11,13 @@ export default function AboutPage() {
   return (
     <SimplePage
       title="About Sea Supply Hub"
-      intro="Sea Supply Hub is a US-focused marine ecommerce affiliate platform designed to help boat owners discover gear with confidence."
+      intro="Sea Supply Hub is a US-focused marine ecommerce marketplace platform designed to help boat owners discover gear with confidence."
     >
       <p className="text-slate-700">
-        We combine deep product taxonomy, expert educational content, and transparent affiliate relationships to create a better buying research experience.
+        We combine deep product taxonomy, expert educational content, and transparent marketplace relationships to create a better buying research experience.
         Our goal is simple: help you pick the right gear faster, with fewer costly mismatches.
       </p>
     </SimplePage>
   );
 }
+
