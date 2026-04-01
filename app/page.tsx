@@ -1,6 +1,5 @@
 ﻿import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
 import {
   Anchor,
   Battery,
@@ -61,11 +60,6 @@ export default function HomePage() {
 
   return (
     <div className="space-y-10">
-      <Script
-        id="avantlink-app-confirm-temp"
-        strategy="lazyOnload"
-        src="https://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=157515dcf6449fa9eb52c19cea373aeb662b52d8"
-      />
       <HeroSection />
 
       <section className="rounded-3xl border border-slate-200 bg-white p-6 md:p-8">
