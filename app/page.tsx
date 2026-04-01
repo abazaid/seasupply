@@ -1,4 +1,5 @@
-﻿import Link from "next/link";
+﻿import Image from "next/image";
+import Link from "next/link";
 import {
   Anchor,
   Battery,
@@ -9,7 +10,6 @@ import {
   Shield,
   Wrench,
 } from "lucide-react";
-import { CategoryCard } from "@/components/shared/category-card";
 import { ProductCard } from "@/components/shared/product-card";
 import { ArticleCard } from "@/components/shared/article-card";
 import { BrandStrip } from "@/components/sections/brand-strip";
@@ -19,25 +19,24 @@ import { TrustBadges } from "@/components/sections/trust-badges";
 import {
   articles,
   bestSellers,
-  categories,
   featuredProducts,
   getArticlesByType,
 } from "@/data";
 import { buildMetadata } from "@/lib/seo";
 
 const shopByCategory = [
-  { label: "Marine Electrical", href: "/categories/marine-electrical", icon: Battery },
-  { label: "Electronics & Navigation", href: "/categories/electronics-navigation", icon: Compass },
-  { label: "Boat Docking", href: "/categories/anchor-docking", icon: Anchor },
-  { label: "Boat Maintenance", href: "/categories/boat-maintenance", icon: Wrench },
-  { label: "Engine Systems", href: "/categories/engine-systems", icon: Settings },
-  { label: "Safety", href: "/categories/safety", icon: Shield },
-  { label: "Marine Plumbing", href: "/categories/plumbing", icon: Settings },
-  { label: "Fishing", href: "/categories/fishing", icon: Fish },
-  { label: "Outdoor Living", href: "/categories/cabin-galley", icon: LifeBuoy },
-  { label: "Boats", href: "/categories/boats-motors", icon: Anchor },
-  { label: "Outboard Motors", href: "/categories/boats-motors", icon: Settings },
-  { label: "Anchoring", href: "/categories/anchor-docking", icon: Anchor },
+  { label: "Marine Electrical", href: "/categories/marine-electrical", icon: Battery, image: "/categories/marine-electrical.svg" },
+  { label: "Electronics & Navigation", href: "/categories/electronics-navigation", icon: Compass, image: "/categories/electronics-navigation.svg" },
+  { label: "Boat Docking", href: "/categories/anchor-docking", icon: Anchor, image: "/categories/boat-docking.svg" },
+  { label: "Boat Maintenance", href: "/categories/boat-maintenance", icon: Wrench, image: "/categories/boat-maintenance.svg" },
+  { label: "Engine Systems", href: "/categories/engine-systems", icon: Settings, image: "/categories/engine-systems.svg" },
+  { label: "Safety", href: "/categories/safety", icon: Shield, image: "/categories/safety.svg" },
+  { label: "Marine Plumbing", href: "/categories/plumbing", icon: Settings, image: "/categories/marine-plumbing.svg" },
+  { label: "Fishing", href: "/categories/fishing", icon: Fish, image: "/categories/fishing.svg" },
+  { label: "Outdoor Living", href: "/categories/cabin-galley", icon: LifeBuoy, image: "/categories/outdoor-living.svg" },
+  { label: "Boats", href: "/categories/boats-motors", icon: Anchor, image: "/categories/boats.svg" },
+  { label: "Outboard Motors", href: "/categories/boats-motors", icon: Settings, image: "/categories/outboard-motors.svg" },
+  { label: "Anchoring", href: "/categories/anchor-docking", icon: Anchor, image: "/categories/anchoring.svg" },
 ];
 
 const topCollections = [
@@ -63,13 +62,13 @@ export default function HomePage() {
     <div className="space-y-10">
       <HeroSection />
 
-      <section className="rounded-2xl border border-slate-200 bg-white p-6">
+      <section className="rounded-3xl border border-slate-200 bg-white p-6 md:p-8">
         <h2 className="text-center text-3xl font-bold uppercase tracking-tight text-sky-950">Shop by Category</h2>
         <div className="mt-6 grid gap-4 md:grid-cols-3 lg:grid-cols-6">
           {shopByCategory.map((item) => {
             const Icon = item.icon;
             return (
-              <Link key={item.label} href={item.href} className="rounded-xl border border-slate-200 p-3 text-center hover:bg-slate-50">
+              <Link key={item.label} href={item.href} className="rounded-2xl border border-slate-200 p-4 text-center transition hover:-translate-y-0.5 hover:bg-slate-50">
                 <div className="mx-auto mb-3 flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-sky-100 to-slate-200" aria-hidden="true">
                   <Icon className="h-10 w-10 text-sky-900" />
                 </div>
@@ -80,10 +79,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        {categories.slice(0, 8).map((category) => (
-          <CategoryCard key={category.slug} category={category} />
-        ))}
+      <section className="rounded-3xl border border-slate-200 bg-white p-6 md:p-8">
+        <div className="mb-4 flex items-center justify-between">
+          <h2 className="text-2xl font-semibold text-slate-900">Category Visual Picks</h2>
+          <Link href="/categories" className="text-sm font-semibold text-sky-700 hover:underline">View All Categories</Link>
+        </div>
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          {shopByCategory.map((item) => (
+            <Link key={`image-${item.label}`} href={item.href} className="group overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
+              <div className="relative aspect-[4/3] w-full">
+                <Image src={item.image} alt={`${item.label} category image`} fill className="object-cover transition duration-300 group-hover:scale-105" />
+              </div>
+              <div className="p-3">
+                <p className="text-sm font-semibold text-slate-900">{item.label}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
       </section>
 
       <BrandStrip />
@@ -105,36 +117,6 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
-        </article>
-      </section>
-
-      <section className="grid gap-4 lg:grid-cols-3">
-        <article className="rounded-2xl border border-slate-200 bg-white p-6">
-          <h2 className="text-xl font-semibold text-slate-900">Boating Essentials</h2>
-          <p className="mt-2 text-sm text-slate-700">
-            Navigation, communication, and dock-ready systems for reliable weekend and offshore trips.
-          </p>
-          <Link href="/categories/electronics-navigation" className="mt-4 inline-block text-sm font-semibold text-sky-700">
-            Explore Electronics & Navigation
-          </Link>
-        </article>
-        <article className="rounded-2xl border border-slate-200 bg-white p-6">
-          <h2 className="text-xl font-semibold text-slate-900">Maintenance Essentials</h2>
-          <p className="mt-2 text-sm text-slate-700">
-            Seasonal cleaning, polishing, and preventive service picks to extend equipment life.
-          </p>
-          <Link href="/categories/boat-maintenance" className="mt-4 inline-block text-sm font-semibold text-sky-700">
-            Explore Boat Maintenance
-          </Link>
-        </article>
-        <article className="rounded-2xl border border-slate-200 bg-white p-6">
-          <h2 className="text-xl font-semibold text-slate-900">Safety Essentials</h2>
-          <p className="mt-2 text-sm text-slate-700">
-            Build a reliable onboard safety setup with curated life jackets, beacons, and emergency tools.
-          </p>
-          <Link href="/categories/safety" className="mt-4 inline-block text-sm font-semibold text-sky-700">
-            Explore Safety Gear
-          </Link>
         </article>
       </section>
 
