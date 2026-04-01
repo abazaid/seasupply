@@ -8,6 +8,12 @@ import { categories, getProductsBySubcategory, getSubcategory } from "@/data";
 import { breadcrumbSchema, collectionSchema, faqSchema } from "@/lib/schema";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 
+type SubcategoryParams = { categorySlug: string; subcategorySlug: string };
+
+function resolveParams(params: SubcategoryParams | Promise<SubcategoryParams>) {
+  return Promise.resolve(params);
+}
+
 export function generateStaticParams() {
   return categories.flatMap((category) =>
     category.subcategories.map((subcategory) => ({
@@ -17,12 +23,13 @@ export function generateStaticParams() {
   );
 }
 
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
-  params: { categorySlug: string; subcategorySlug: string };
+  params: SubcategoryParams | Promise<SubcategoryParams>;
 }) {
-  const subcategory = getSubcategory(params.categorySlug, params.subcategorySlug);
+  const resolved = await resolveParams(params);
+  const subcategory = getSubcategory(resolved.categorySlug, resolved.subcategorySlug);
   if (!subcategory) {
     return buildMetadata({
       title: "Subcategory Not Found",
@@ -34,20 +41,21 @@ export function generateMetadata({
   return buildMetadata({
     title: `${subcategory.name} Marine Products`,
     description: subcategory.description,
-    path: `/categories/${params.categorySlug}/${params.subcategorySlug}`,
+    path: `/categories/${resolved.categorySlug}/${resolved.subcategorySlug}`,
     keywords: [subcategory.name, "marine subcategory", "boat parts", "marine gear"],
   });
 }
 
-export default function SubcategoryPage({
+export default async function SubcategoryPage({
   params,
 }: {
-  params: { categorySlug: string; subcategorySlug: string };
+  params: SubcategoryParams | Promise<SubcategoryParams>;
 }) {
-  const subcategory = getSubcategory(params.categorySlug, params.subcategorySlug);
+  const resolved = await resolveParams(params);
+  const subcategory = getSubcategory(resolved.categorySlug, resolved.subcategorySlug);
   if (!subcategory) notFound();
 
-  const products = getProductsBySubcategory(params.categorySlug, params.subcategorySlug);
+  const products = getProductsBySubcategory(resolved.categorySlug, resolved.subcategorySlug);
 
   const scopedFaqs = [
     {
@@ -68,7 +76,7 @@ export default function SubcategoryPage({
         data={collectionSchema(
           subcategory.name,
           subcategory.description,
-          absoluteUrl(`/categories/${params.categorySlug}/${params.subcategorySlug}`),
+          absoluteUrl(`/categories/${resolved.categorySlug}/${resolved.subcategorySlug}`),
           products.length,
         )}
       />
@@ -78,7 +86,7 @@ export default function SubcategoryPage({
           { name: "Categories", url: absoluteUrl("/categories") },
           {
             name: subcategory.name,
-            url: absoluteUrl(`/categories/${params.categorySlug}/${params.subcategorySlug}`),
+            url: absoluteUrl(`/categories/${resolved.categorySlug}/${resolved.subcategorySlug}`),
           },
         ])}
       />
@@ -90,7 +98,7 @@ export default function SubcategoryPage({
           { label: "Categories", href: "/categories" },
           {
             label: subcategory.name,
-            href: `/categories/${params.categorySlug}/${params.subcategorySlug}`,
+            href: `/categories/${resolved.categorySlug}/${resolved.subcategorySlug}`,
           },
         ]}
       />

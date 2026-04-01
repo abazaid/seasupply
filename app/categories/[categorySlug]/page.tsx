@@ -17,12 +17,23 @@ import {
 import { breadcrumbSchema, collectionSchema, faqSchema } from "@/lib/schema";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 
+type CategoryParams = { categorySlug: string };
+
+function resolveParams(params: CategoryParams | Promise<CategoryParams>) {
+  return Promise.resolve(params);
+}
+
 export function generateStaticParams() {
   return categories.map((category) => ({ categorySlug: category.slug }));
 }
 
-export function generateMetadata({ params }: { params: { categorySlug: string } }) {
-  const category = getCategoryBySlug(params.categorySlug);
+export async function generateMetadata({
+  params,
+}: {
+  params: CategoryParams | Promise<CategoryParams>;
+}) {
+  const resolved = await resolveParams(params);
+  const category = getCategoryBySlug(resolved.categorySlug);
   if (!category) {
     return buildMetadata({ title: "Category Not Found", description: "Category not found.", path: "/categories" });
   }
@@ -41,8 +52,13 @@ export function generateMetadata({ params }: { params: { categorySlug: string } 
   });
 }
 
-export default function CategoryPage({ params }: { params: { categorySlug: string } }) {
-  const category = getCategoryBySlug(params.categorySlug);
+export default async function CategoryPage({
+  params,
+}: {
+  params: CategoryParams | Promise<CategoryParams>;
+}) {
+  const resolved = await resolveParams(params);
+  const category = getCategoryBySlug(resolved.categorySlug);
   if (!category) notFound();
 
   const products = getProductsByCategory(category.slug);
