@@ -1,0 +1,254 @@
+[
+  {
+    "slug": "electronics-navigation",
+    "name": "Electronics & Navigation",
+    "description": "Marine electronics for navigation, communication, and situational awareness.",
+    "seoIntro": "Electronics and navigation gear is the command center of any modern vessel, whether you run a trailerable bay boat, a bluewater cruiser, or a weekend pontoon. At Sea Supply Hub, this category is structured to help you compare marine chartplotters, fishfinders, radar systems, AIS safety tools, and communication equipment in one place. We focus on practical selection guidance, installation considerations, and compatibility notes so you can match your helm layout, power budget, and boating style without guesswork. You will find product highlights that break down screen readability, transducer choices, mapping support, and network expandability, plus support content that explains real-world setup tradeoffs. Our affiliate model lets you research confidently, then buy from trusted marine partners. Every listing includes specs, feature callouts, and direct partner links so you can move from research to purchase quickly while still getting the depth expected from an enterprise marine retailer.",
+    "featuredBrandSlugs": ["garmin", "raymarine", "simrad"],
+    "faqIds": ["faq-electronics-1", "faq-electronics-2"],
+    "subcategories": [
+      { "slug": "chartplotters", "name": "Chartplotters", "description": "GPS and map navigation displays for inland and offshore routes." },
+      { "slug": "fishfinders", "name": "Fishfinders", "description": "CHIRP and side-scan sonar systems for locating fish and structure." },
+      { "slug": "radar-ais", "name": "Radar & AIS", "description": "Collision awareness and vessel traffic tracking for safer cruising." },
+      { "slug": "vhf-radio", "name": "VHF Radios", "description": "Marine communication radios with DSC and emergency signaling." }
+    ]
+  },
+  {
+    "slug": "anchor-docking",
+    "name": "Anchor & Docking",
+    "description": "Anchors, rodes, windlasses, fenders, and mooring essentials.",
+    "seoIntro": "A secure anchoring and docking setup protects your boat, your crew, and the vessels around you. This section covers complete systems instead of one-off parts so you can build a reliable setup from bow roller to cleat. Explore anchors by bottom type, anchor rodes by chain and rope combination, fender options by hull profile, and docking accessories designed for quick, repeatable tie-ups in changing conditions. We include practical guidance for sizing anchors to displacement and windage, selecting line materials for stretch and abrasion resistance, and planning safe retrieval with manual or electric windlasses. Category pages are organized for fast filtering and include related buying guides to reduce costly mismatches. Since Sea Supply Hub is affiliate-first, product pages focus on clear specs, setup context, and partner purchase links. You get retail-level depth and shopping clarity without checkout friction, while keeping the platform ready for full ecommerce expansion later.",
+    "featuredBrandSlugs": ["lewmar", "shakespeare", "blue-sea-systems"],
+    "faqIds": ["faq-anchor-1", "faq-anchor-2"],
+    "subcategories": [
+      { "slug": "anchors", "name": "Anchors", "description": "Rocna, plow, fluke, and specialty anchor options by seabed type." },
+      { "slug": "anchor-rodes", "name": "Anchor Rodes", "description": "Pre-spliced rope and chain combinations for secure hold and retrieval." },
+      { "slug": "windlasses", "name": "Windlasses", "description": "Electric and manual anchor deployment systems with deck hardware." },
+      { "slug": "fenders-lines", "name": "Fenders & Dock Lines", "description": "Dock protection and mooring lines sized by vessel length." }
+    ]
+  },
+  {
+    "slug": "safety",
+    "name": "Safety",
+    "description": "Life jackets, signaling gear, survival and emergency equipment.",
+    "seoIntro": "Safety equipment should be easy to find, easy to inspect, and ready before weather changes or route complexity increases. Sea Supply Hub organizes marine safety gear by real onboard use cases: required carriage items, offshore preparedness, crew visibility, and emergency communications. Compare life jackets by activity profile and comfort, select signaling tools for daylight and low-visibility conditions, and review emergency kits built for coastal or extended passages. We emphasize durability, standards alignment, and practical storage so equipment stays serviceable season after season. Product pages include quick highlights and clear specification tables, while resource content helps you set up maintenance intervals and expiration checks for flares, batteries, and inflation systems. This approach supports both new boat owners and experienced skippers who want to refresh aging kits with confidence. With affiliate partner links, you can complete your purchase at established retailers after validating fit, features, and compliance details.",
+    "featuredBrandSlugs": ["mustang-survival", "garmin", "shakespeare"],
+    "faqIds": ["faq-safety-1", "faq-safety-2"],
+    "subcategories": [
+      { "slug": "life-jackets", "name": "Life Jackets", "description": "Coast Guard compliant PFDs for adults, kids, and offshore use." },
+      { "slug": "epirb-plb", "name": "EPIRB & PLB", "description": "Satellite distress beacons for emergency location and rescue." },
+      { "slug": "flares-signals", "name": "Flares & Signaling", "description": "Visual and audible signaling tools for emergencies and low visibility." },
+      { "slug": "first-aid", "name": "First Aid & Survival", "description": "Marine-specific first aid and emergency survival kits." }
+    ]
+  },
+  {
+    "slug": "marine-electrical",
+    "name": "Marine Electrical",
+    "description": "Batteries, charging, inverters, breakers, and power systems.",
+    "seoIntro": "Reliable electrical infrastructure is the backbone of safe electronics operation, overnight comfort, and dependable engine starts. This category helps you design and maintain 12V and 24V marine systems with clear product segmentation for charging, distribution, storage, and protection. Compare battery chemistries, onboard chargers, inverters, and busbar or breaker configurations based on load profiles and space constraints. We highlight practical factors such as heat management, wire routing, fuse placement, and corrosion mitigation in saltwater environments so installations stay dependable over time. Product detail pages include fitment notes and compatibility pointers where applicable, and related guides explain common upgrade paths such as lead-acid to LiFePO4 transitions. Whether you are modernizing a cruising boat or cleaning up a weekend wiring project, Sea Supply Hub gives you a clear research path and direct partner links to complete purchase through trusted marine suppliers.",
+    "featuredBrandSlugs": ["blue-sea-systems", "victron", "yamaha"],
+    "faqIds": ["faq-electrical-1", "faq-electrical-2"],
+    "subcategories": [
+      { "slug": "batteries", "name": "Marine Batteries", "description": "Starting, deep-cycle, AGM, and lithium battery options." },
+      { "slug": "chargers", "name": "Battery Chargers", "description": "Smart onboard charging systems for multi-bank battery setups." },
+      { "slug": "inverters", "name": "Inverters", "description": "DC to AC conversion for onboard appliances and sensitive electronics." },
+      { "slug": "switches-breakers", "name": "Switches & Breakers", "description": "Circuit protection and panel controls for marine power distribution." }
+    ]
+  },
+  {
+    "slug": "boat-maintenance",
+    "name": "Boat Maintenance",
+    "description": "Cleaning, polishing, anti-fouling, detailing, and service tools.",
+    "seoIntro": "Consistent maintenance protects resale value, improves reliability, and helps prevent expensive in-season failures. The Boat Maintenance category is curated around practical upkeep cycles: hull cleaning, corrosion prevention, seasonal detailing, and routine inspections. Find marine-safe soaps and cleaners, compounding and polishing systems, anti-fouling coatings, and storage prep products designed for different hull materials and water conditions. We structure content to support both quick weekend tasks and full preseason overhauls, with guide links that explain step-by-step workflows and recommended product pairings. Listings include concise feature highlights, specification data where relevant, and compatibility notes to reduce material mismatches across gelcoat, painted surfaces, or metal fittings. Sea Supply Hub keeps these pages information-rich and search-friendly, while affiliate CTAs send buyers to trusted partner stores to complete transactions. The result is a high-confidence maintenance shopping experience designed for scale.",
+    "featuredBrandSlugs": ["attwood", "shurflo", "yamaha"],
+    "faqIds": ["faq-maintenance-1", "faq-maintenance-2"],
+    "subcategories": [
+      { "slug": "cleaners", "name": "Cleaners & Degreasers", "description": "Surface-safe cleaners for decks, hulls, and engine compartments." },
+      { "slug": "wax-polish", "name": "Wax & Polish", "description": "Protection and shine products for gelcoat and painted hulls." },
+      { "slug": "bottom-paint", "name": "Bottom Paint", "description": "Anti-fouling paints and primers for various water conditions." },
+      { "slug": "tools-supplies", "name": "Tools & Supplies", "description": "Maintenance accessories for prep, application, and touch-up work." }
+    ]
+  },
+  {
+    "slug": "boats-motors",
+    "name": "Boats & Motors",
+    "description": "Boat packages, outboards, trolling motors, and accessories.",
+    "seoIntro": "Boats and propulsion decisions shape every part of your setup, from battery capacity and fuel planning to electronics integration and trip range. This category supports the research phase with clear comparisons across outboards, trolling motors, propulsion accessories, and trailering essentials. We focus on real ownership considerations such as shaft length fitment, thrust requirements, charging behavior, and maintenance intervals. Subcategory landing pages connect gear decisions across systems so users can plan complete upgrades instead of piecemeal purchases. Product details remain transparent and practical, with specs, compatibility notes, and partner links for purchase completion. Sea Supply Hub is built for affiliate conversion without thin content, so every listing and guide aims to reduce uncertainty before checkout at a trusted partner destination.",
+    "featuredBrandSlugs": ["yamaha", "minn-kota", "simrad"],
+    "faqIds": ["faq-motors-1"],
+    "subcategories": [
+      { "slug": "outboard-accessories", "name": "Outboard Accessories", "description": "Controls, gauges, and service components for outboard setups." },
+      { "slug": "trolling-motors", "name": "Trolling Motors", "description": "Bow and transom mount electric propulsion systems." },
+      { "slug": "motor-rigging", "name": "Motor Rigging", "description": "Cables, brackets, and rigging kits for clean installations." },
+      { "slug": "trailering", "name": "Trailering", "description": "Transport and launch accessories for safe towing and storage." }
+    ]
+  },
+  {
+    "slug": "engine-systems",
+    "name": "Engine Systems",
+    "description": "Fuel, cooling, filtration, and drivetrain essentials.",
+    "seoIntro": "Engine reliability comes from preventative service and quality components that match your powertrain requirements. This section is designed around core systems you maintain most often: fuel delivery, cooling flow, lubrication, and ignition support. Browse products by engine type and usage pattern, then validate critical dimensions and service intervals through spec-driven listings. We emphasize practical planning for replacement cycles and onboard spares so downtime is minimized during peak boating season. For advanced users, related guides cover troubleshooting workflows and upgrade paths that complement electrical and instrumentation changes. Sea Supply Hub combines this depth with affiliate-ready shopping actions, allowing you to compare confidently and then complete purchase with established partner merchants.",
+    "featuredBrandSlugs": ["yamaha", "shurflo", "attwood"],
+    "faqIds": ["faq-engine-1"],
+    "subcategories": [
+      { "slug": "fuel-systems", "name": "Fuel Systems", "description": "Fuel lines, separators, connectors, and tanks." },
+      { "slug": "cooling", "name": "Cooling", "description": "Impellers, thermostats, and cooling circuit components." },
+      { "slug": "filtration", "name": "Filtration", "description": "Oil, fuel, and water filtration parts for routine service." },
+      { "slug": "ignition", "name": "Ignition", "description": "Spark plugs, ignition coils, and electrical engine components." }
+    ]
+  },
+  {
+    "slug": "fishing",
+    "name": "Fishing",
+    "description": "Tackle, rod holders, livewell accessories, and onboard fishing gear.",
+    "seoIntro": "Fishing setups demand smart gear integration between electronics, deck hardware, and storage. In this category, we organize products by workflow on the water: locating fish, managing tackle, keeping bait healthy, and controlling drift or position. Category and subcategory pages include essential buying guidance and cross-links to compatible electronics and power gear, making it easier to plan complete systems. Product pages provide concise specs and feature highlights so anglers can compare quickly and move to partner checkout with confidence. Whether you are outfitting a skiff for inshore runs or optimizing a center console for offshore trips, Sea Supply Hub gives you practical research depth without ecommerce clutter.",
+    "featuredBrandSlugs": ["garmin", "minn-kota", "simrad"],
+    "faqIds": ["faq-fishing-1"],
+    "subcategories": [
+      { "slug": "rod-holders", "name": "Rod Holders", "description": "Flush and rail-mount holders for secure rod placement." },
+      { "slug": "tackle-storage", "name": "Tackle Storage", "description": "Water-resistant organizers and deck-ready tackle systems." },
+      { "slug": "livewell-aeration", "name": "Livewell & Aeration", "description": "Pumps and aerators for healthy bait management." },
+      { "slug": "fishing-electronics", "name": "Fishing Electronics", "description": "Sonar and fishing-specific electronic accessories." }
+    ]
+  },
+  {
+    "slug": "plumbing",
+    "name": "Plumbing",
+    "description": "Marine plumbing fittings, hose, sanitation, and water systems.",
+    "seoIntro": "Marine plumbing needs to handle vibration, moisture, and seasonal changes without leaks or odor issues. This section helps you select the right hose types, fittings, valves, and sanitation components for freshwater and waste systems. We focus on fitment clarity, material compatibility, and practical installation notes so maintenance and upgrades are straightforward. Internal links connect plumbing gear to pumps and electrical accessories where system dependencies matter. Every product page keeps technical details visible and includes partner purchase options to streamline completion after research.",
+    "featuredBrandSlugs": ["shurflo", "attwood", "blue-sea-systems"],
+    "faqIds": ["faq-plumbing-1"],
+    "subcategories": [
+      { "slug": "hoses", "name": "Marine Hoses", "description": "Reinforced hose options for water, bilge, and sanitation lines." },
+      { "slug": "fittings", "name": "Fittings & Clamps", "description": "Corrosion-resistant fittings and clamps for secure plumbing runs." },
+      { "slug": "water-systems", "name": "Freshwater Systems", "description": "Tanks, faucets, and accessories for onboard water delivery." },
+      { "slug": "sanitation", "name": "Sanitation", "description": "Marine toilet and waste management components." }
+    ]
+  },
+  {
+    "slug": "pumps",
+    "name": "Pumps",
+    "description": "Bilge, washdown, freshwater, and transfer pumps.",
+    "seoIntro": "From bilge protection to deck cleanup, marine pumps are a high-priority reliability system. Sea Supply Hub organizes pumps by purpose and flow profile so you can compare output, duty cycle, and electrical draw quickly. Listings include practical notes on mounting, priming, and maintenance access to support real-world installations. Paired guides help users determine sizing and redundancy planning for safer operation. Affiliate CTAs direct customers to trusted partners only after key fitment details are clear.",
+    "featuredBrandSlugs": ["shurflo", "attwood", "blue-sea-systems"],
+    "faqIds": ["faq-pumps-1"],
+    "subcategories": [
+      { "slug": "bilge-pumps", "name": "Bilge Pumps", "description": "Automatic and manual bilge pumps for water removal." },
+      { "slug": "washdown-pumps", "name": "Washdown Pumps", "description": "Pressure pumps for cockpit and deck cleaning." },
+      { "slug": "freshwater-pumps", "name": "Freshwater Pumps", "description": "On-demand pumps for sinks, showers, and galley use." },
+      { "slug": "pump-switches", "name": "Pump Switches", "description": "Float and electronic switches for automatic pump control." }
+    ]
+  },
+  {
+    "slug": "sailing",
+    "name": "Sailing",
+    "description": "Rigging, lines, winches, and sailboat deck gear.",
+    "seoIntro": "Dedicated sailing equipment requires attention to load paths, friction management, and reliable deck ergonomics. This category provides a clear path to compare running rigging, hardware blocks, winches, and line-handling accessories for cruising and performance applications. We combine technical specificity with practical usage context so upgrades fit both boat layout and crew workflow.",
+    "featuredBrandSlugs": ["lewmar", "raymarine", "shakespeare"],
+    "faqIds": ["faq-sailing-1"],
+    "subcategories": [
+      { "slug": "running-rigging", "name": "Running Rigging", "description": "Sheets, halyards, and control lines for sail handling." },
+      { "slug": "winches", "name": "Winches", "description": "Manual and electric winches for line control under load." },
+      { "slug": "blocks-hardware", "name": "Blocks & Hardware", "description": "Low-friction blocks and deck hardware for rig efficiency." },
+      { "slug": "sailing-electronics", "name": "Sailing Electronics", "description": "Instruments and sensors for wind, depth, and speed data." }
+    ]
+  },
+  {
+    "slug": "watersports",
+    "name": "Watersports",
+    "description": "Towables, wake gear, safety accessories, and watersports equipment.",
+    "seoIntro": "Watersports gear must balance fun, durability, and safety in changing water and weather conditions. Browse towables, ropes, life vests, and accessory essentials by user type and activity intensity. Category content includes practical care tips and compatible accessories to extend gear life and improve on-water confidence.",
+    "featuredBrandSlugs": ["mustang-survival", "attwood", "yamaha"],
+    "faqIds": ["faq-watersports-1"],
+    "subcategories": [
+      { "slug": "towables", "name": "Towables", "description": "Single and multi-rider towables for family boating." },
+      { "slug": "tow-ropes", "name": "Tow Ropes", "description": "High-strength ropes and handle sets for towing sports." },
+      { "slug": "impact-vests", "name": "Impact Vests", "description": "Mobility-focused vests for wake and ski activities." },
+      { "slug": "helmets-protection", "name": "Helmets & Protection", "description": "Protective gear for higher-speed watersports use." }
+    ]
+  },
+  {
+    "slug": "cabin-galley",
+    "name": "Cabin & Galley",
+    "description": "Cooking, comfort, storage, and onboard living essentials.",
+    "seoIntro": "Cabin and galley equipment improves comfort and usability during overnight trips and long cruising days. Compare compact appliances, marine-safe cookware, storage systems, and ventilation solutions designed for tight onboard spaces.",
+    "featuredBrandSlugs": ["attwood", "victron", "shurflo"],
+    "faqIds": ["faq-cabin-1"],
+    "subcategories": [
+      { "slug": "cookware", "name": "Cookware", "description": "Space-efficient cooking gear for marine galleys." },
+      { "slug": "refrigeration", "name": "Refrigeration", "description": "Portable and built-in cooling solutions." },
+      { "slug": "storage-organization", "name": "Storage & Organization", "description": "Secure cabin storage products for rough-water conditions." },
+      { "slug": "comfort-ventilation", "name": "Comfort & Ventilation", "description": "Fans, bedding, and comfort upgrades for overnight stays." }
+    ]
+  },
+  {
+    "slug": "marine-hardware",
+    "name": "Marine Hardware",
+    "description": "Fasteners, hinges, latches, rails, and deck hardware.",
+    "seoIntro": "Marine hardware must withstand constant exposure to moisture, UV, and vibration. This category helps you source durable components for deck, cabin, and utility upgrades while keeping fitment details clear.",
+    "featuredBrandSlugs": ["lewmar", "attwood", "blue-sea-systems"],
+    "faqIds": ["faq-hardware-1"],
+    "subcategories": [
+      { "slug": "cleats", "name": "Cleats", "description": "Docking and mooring cleats in common marine sizes." },
+      { "slug": "hinges-latches", "name": "Hinges & Latches", "description": "Corrosion-resistant hinges, catches, and latches." },
+      { "slug": "fasteners", "name": "Fasteners", "description": "Marine-grade bolts, screws, and installation hardware." },
+      { "slug": "rails-fittings", "name": "Rails & Fittings", "description": "Stanchion, rail, and deck fitting components." }
+    ]
+  },
+  {
+    "slug": "apparel",
+    "name": "Apparel",
+    "description": "Marine clothing, foul-weather gear, and footwear.",
+    "seoIntro": "Marine apparel needs to perform under spray, wind, and changing temperatures. Browse jackets, bibs, gloves, and deck footwear selected for durability, mobility, and weather protection.",
+    "featuredBrandSlugs": ["mustang-survival", "shakespeare", "garmin"],
+    "faqIds": ["faq-apparel-1"],
+    "subcategories": [
+      { "slug": "foul-weather", "name": "Foul Weather Gear", "description": "Waterproof jackets and bibs for heavy-weather boating." },
+      { "slug": "base-layers", "name": "Base Layers", "description": "Moisture-managing layers for variable marine climates." },
+      { "slug": "deck-footwear", "name": "Deck Footwear", "description": "Non-marking shoes and boots for secure footing." },
+      { "slug": "gloves-hats", "name": "Gloves & Hats", "description": "Sun and weather protection accessories." }
+    ]
+  },
+  {
+    "slug": "gifts-guides",
+    "name": "Gifts & Guides",
+    "description": "Gift ideas, bundles, and practical marine planning resources.",
+    "seoIntro": "Shop curated marine gift picks and planning-focused guide content for boat owners, anglers, and sailors. This section combines editorial direction with product discovery for quick decision-making.",
+    "featuredBrandSlugs": ["garmin", "minn-kota", "victron"],
+    "faqIds": ["faq-gifts-1"],
+    "subcategories": [
+      { "slug": "gift-sets", "name": "Gift Sets", "description": "Curated bundles for common boating use cases." },
+      { "slug": "gift-cards", "name": "Gift Cards", "description": "Partner gift card recommendations and guidance." },
+      { "slug": "beginner-guides", "name": "Beginner Guides", "description": "Entry-level boating and gear selection content." },
+      { "slug": "seasonal-picks", "name": "Seasonal Picks", "description": "Timely recommendations for spring, summer, and winter prep." }
+    ]
+  },
+  {
+    "slug": "deals-sale",
+    "name": "Deals / Sale",
+    "description": "Limited-time discounts and seasonal marine deals.",
+    "seoIntro": "Track rotating promotions across major marine categories. Deal pages are structured for fast filtering, clear merchant links, and quick visibility into seasonal opportunities.",
+    "featuredBrandSlugs": ["garmin", "raymarine", "shurflo"],
+    "faqIds": ["faq-deals-1"],
+    "subcategories": [
+      { "slug": "electronics-deals", "name": "Electronics Deals", "description": "Promotional pricing on chartplotters and sonar gear." },
+      { "slug": "safety-deals", "name": "Safety Deals", "description": "Savings on life-saving and emergency equipment." },
+      { "slug": "maintenance-deals", "name": "Maintenance Deals", "description": "Seasonal discounts on cleaning and upkeep products." },
+      { "slug": "clearance", "name": "Clearance", "description": "Closeout marine inventory and last-chance pricing." }
+    ]
+  },
+  {
+    "slug": "resources-learn",
+    "name": "Resources / Learn",
+    "description": "Buying guides, blog posts, and comparison content.",
+    "seoIntro": "Resource content is built to answer high-intent boating questions with practical, unbiased guidance. Use these learning hubs to compare options, understand specs, and plan safer upgrades.",
+    "featuredBrandSlugs": ["garmin", "blue-sea-systems", "victron"],
+    "faqIds": ["faq-resources-1"],
+    "subcategories": [
+      { "slug": "buying-guides", "name": "Buying Guides", "description": "Step-by-step purchase frameworks by product type." },
+      { "slug": "maintenance-guides", "name": "Maintenance Guides", "description": "Practical service and seasonal care education." },
+      { "slug": "comparisons", "name": "Comparisons", "description": "Head-to-head product category comparison articles." },
+      { "slug": "troubleshooting", "name": "Troubleshooting", "description": "Problem-solving resources for common boat issues." }
+    ]
+  }
+]

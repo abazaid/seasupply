@@ -1,0 +1,151 @@
+[
+  {
+    "slug": "how-to-choose-a-marine-gps",
+    "title": "How to Choose a Marine GPS and Chartplotter",
+    "excerpt": "A practical framework for choosing marine navigation displays that fit your helm and boating style.",
+    "type": "buying-guide",
+    "coverImage": "/images/placeholder-guide-1.jpg",
+    "publishedAt": "2026-03-10",
+    "updatedAt": "2026-03-26",
+    "author": "Sea Supply Hub Editorial",
+    "readingMinutes": 9,
+    "categorySlugs": ["electronics-navigation"],
+    "relatedProductSlugs": ["garmin-echomap-ultra-2", "simrad-nss-4-10"],
+    "sections": [
+      {"heading": "Start With Helm Space", "body": "Measure width, depth, and viewing angle before comparing screen sizes. A great unit that does not fit well becomes hard to use underway."},
+      {"heading": "Match Features to Water Type", "body": "Inshore anglers may prioritize sonar and quick route setup, while offshore boaters often need radar and AIS integration."},
+      {"heading": "Plan Network Growth", "body": "Choose a platform that can expand into radar, autopilot, and engine data without replacing the core display."}
+    ],
+    "faqs": [
+      {"question": "Is 9 inches enough for navigation?", "answer": "Yes for many small to mid-size helms, but split-screen workflows usually benefit from 10-12 inch displays."}
+    ]
+  },
+  {
+    "slug": "marine-fishfinder-vs-chartplotter",
+    "title": "Fishfinder vs Chartplotter: What You Actually Need",
+    "excerpt": "Understand when to buy a dedicated fishfinder, a chartplotter, or a combined unit.",
+    "type": "comparison",
+    "coverImage": "/images/placeholder-guide-2.jpg",
+    "publishedAt": "2026-02-28",
+    "updatedAt": "2026-03-20",
+    "author": "Sea Supply Hub Editorial",
+    "readingMinutes": 8,
+    "categorySlugs": ["electronics-navigation", "fishing"],
+    "relatedProductSlugs": ["raymarine-element-9-hv", "garmin-echomap-ultra-2"],
+    "sections": [
+      {"heading": "Core Difference", "body": "Fishfinders prioritize sonar detail. Chartplotters prioritize mapping and route control. Combo units bridge both for many users."},
+      {"heading": "Decision by Use Case", "body": "If your day is mostly target-fishing structure, sonar quality leads. If you run long routes or complex channels, navigation features matter most."}
+    ],
+    "faqs": [
+      {"question": "Do I need both devices?", "answer": "Many owners use one combo display first, then add dedicated screens when budget and helm space allow."}
+    ]
+  },
+  {
+    "slug": "anchor-sizing-for-coastal-boats",
+    "title": "Anchor Sizing for Coastal Boats",
+    "excerpt": "Anchor selection principles based on boat size, displacement, and typical bottom conditions.",
+    "type": "buying-guide",
+    "coverImage": "/images/placeholder-guide-3.jpg",
+    "publishedAt": "2026-03-08",
+    "updatedAt": "2026-03-24",
+    "author": "Sea Supply Hub Editorial",
+    "readingMinutes": 7,
+    "categorySlugs": ["anchor-docking"],
+    "relatedProductSlugs": ["lewmar-delta-anchor-22lb", "lewmar-pro-series-windlass-1000w"],
+    "sections": [
+      {"heading": "Sizing Basics", "body": "Weight recommendations are a starting point. Windage and cruising load should influence final selection."},
+      {"heading": "Rode Matters", "body": "Anchor holding is strongly affected by chain length, rope type, and deployment technique."}
+    ],
+    "faqs": [{"question": "Should I upsize my anchor?", "answer": "If you anchor in variable weather or overnight often, moderate upsizing can add confidence."}]
+  },
+  {
+    "slug": "marine-electrical-system-basics",
+    "title": "Marine Electrical System Basics for 12V and 24V Boats",
+    "excerpt": "A practical primer on batteries, breakers, charging, and safer wiring decisions.",
+    "type": "buying-guide",
+    "coverImage": "/images/placeholder-guide-4.jpg",
+    "publishedAt": "2026-03-02",
+    "updatedAt": "2026-03-27",
+    "author": "Sea Supply Hub Editorial",
+    "readingMinutes": 11,
+    "categorySlugs": ["marine-electrical"],
+    "relatedProductSlugs": ["blue-sea-12-circuit-panel", "victron-smart-battery-monitor"],
+    "sections": [
+      {"heading": "Protect Every Circuit", "body": "Use properly sized breakers or fuses as close to the power source as practical."},
+      {"heading": "Track Battery Health", "body": "Monitoring state of charge helps avoid damaging deep discharge and unexpected system dropouts."}
+    ],
+    "faqs": [{"question": "Can I mix battery chemistries?", "answer": "It is possible in some architectures, but it requires careful charging strategy and isolation design."}]
+  },
+  {
+    "slug": "spring-boat-maintenance-checklist",
+    "title": "Spring Boat Maintenance Checklist",
+    "excerpt": "A seasonal checklist to get your boat launch-ready with fewer in-season surprises.",
+    "type": "blog",
+    "coverImage": "/images/placeholder-guide-5.jpg",
+    "publishedAt": "2026-03-01",
+    "updatedAt": "2026-03-29",
+    "author": "Sea Supply Hub Editorial",
+    "readingMinutes": 6,
+    "categorySlugs": ["boat-maintenance"],
+    "relatedProductSlugs": ["attwood-marine-deck-cleaner-32oz", "attwood-boat-wax-protection-kit"],
+    "sections": [
+      {"heading": "Hull and Deck", "body": "Clean, inspect, and protect exposed surfaces before launch to improve finish longevity."},
+      {"heading": "Systems Check", "body": "Run through bilge, electrical, and fuel checks before first trip."}
+    ],
+    "faqs": [{"question": "How early should spring prep start?", "answer": "Start 3-4 weeks before launch so you can handle delays and replacement parts."}]
+  },
+  {
+    "slug": "outboard-fuel-system-troubleshooting",
+    "title": "Outboard Fuel System Troubleshooting",
+    "excerpt": "Common symptoms, likely causes, and practical diagnostics for outboard fuel delivery issues.",
+    "type": "blog",
+    "coverImage": "/images/placeholder-guide-6.jpg",
+    "publishedAt": "2026-03-04",
+    "updatedAt": "2026-03-25",
+    "author": "Sea Supply Hub Editorial",
+    "readingMinutes": 10,
+    "categorySlugs": ["engine-systems"],
+    "relatedProductSlugs": ["yamaha-fuel-water-separator-kit", "yamaha-outboard-service-kit-f150"],
+    "sections": [
+      {"heading": "Start With Fuel Quality", "body": "Water contamination and stale fuel remain two of the most common causes of rough operation."},
+      {"heading": "Check Filters and Lines", "body": "Restricted filters and compromised lines reduce delivery pressure and engine consistency."}
+    ],
+    "faqs": [{"question": "How often should separators be replaced?", "answer": "Follow manufacturer guidance, but inspect more often in humid coastal regions."}]
+  },
+  {
+    "slug": "best-trolling-motor-for-inshore-fishing",
+    "title": "Choosing the Best Trolling Motor for Inshore Fishing",
+    "excerpt": "Pick the right thrust, shaft length, and battery setup for inshore conditions.",
+    "type": "buying-guide",
+    "coverImage": "/images/placeholder-guide-7.jpg",
+    "publishedAt": "2026-03-06",
+    "updatedAt": "2026-03-28",
+    "author": "Sea Supply Hub Editorial",
+    "readingMinutes": 8,
+    "categorySlugs": ["boats-motors", "fishing"],
+    "relatedProductSlugs": ["minn-kota-terrova-80-ipilot", "victron-smart-battery-monitor"],
+    "sections": [
+      {"heading": "Thrust and Boat Weight", "body": "Match thrust to real fishing load, not empty hull weight, for dependable control in wind and current."},
+      {"heading": "Battery Strategy", "body": "Runtime depends on battery capacity, voltage platform, and throttle discipline."}
+    ],
+    "faqs": [{"question": "Is 24V enough for most inshore boats?", "answer": "For many inshore setups yes, but larger hulls and rough conditions may benefit from 36V systems."}]
+  },
+  {
+    "slug": "marine-pump-sizing-guide",
+    "title": "Marine Pump Sizing Guide: Bilge, Washdown, and Freshwater",
+    "excerpt": "How to choose pump flow and pressure for common onboard systems.",
+    "type": "comparison",
+    "coverImage": "/images/placeholder-guide-8.jpg",
+    "publishedAt": "2026-03-09",
+    "updatedAt": "2026-03-30",
+    "author": "Sea Supply Hub Editorial",
+    "readingMinutes": 9,
+    "categorySlugs": ["pumps", "plumbing"],
+    "relatedProductSlugs": ["shurflo-pro-washdown-pump-kit", "attwood-automatic-bilge-pump-1100", "shurflo-aqua-king-freshwater-pump"],
+    "sections": [
+      {"heading": "Flow vs Pressure", "body": "Bilge systems prioritize flow rate, while washdown and freshwater systems require pressure consistency."},
+      {"heading": "Installation Realities", "body": "Hose diameter, lift height, and power supply all influence real on-boat performance."}
+    ],
+    "faqs": [{"question": "Can one pump do everything?", "answer": "No. Bilge, washdown, and freshwater systems have different performance targets and duty cycles."}]
+  }
+]
