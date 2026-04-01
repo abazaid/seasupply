@@ -22,6 +22,11 @@ export const metadata: Metadata = {
   applicationName: siteConfig.name,
   category: "Marine Ecommerce marketplace",
   alternates: { canonical: "/" },
+  icons: {
+    icon: [{ url: "/images/sea-supply-icon.svg", type: "image/svg+xml" }],
+    shortcut: ["/images/sea-supply-icon.svg"],
+    apple: [{ url: "/images/sea-supply-icon.svg" }],
+  },
   openGraph: {
     type: "website",
     url: siteConfig.url,
@@ -29,8 +34,12 @@ export const metadata: Metadata = {
     title: "Sea Supply Hub",
     description: siteConfig.description,
     locale: "en_US",
+    images: [{ url: "/images/sea-supply-logo.svg", width: 512, height: 140, alt: "Sea Supply Hub logo" }],
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/images/sea-supply-logo.svg"],
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

@@ -1,4 +1,5 @@
-﻿import Link from "next/link";
+import Image from "next/image";
+import Link from "next/link";
 import { categories } from "@/data";
 import { MegaMenu } from "@/components/layout/mega-menu";
 import { MobileNav } from "@/components/layout/mobile-nav";
@@ -9,8 +10,16 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
       <div className="mx-auto flex w-full max-w-7xl items-center gap-4 px-4 py-3">
         <MobileNav />
-        <Link href="/" className="text-xl font-extrabold tracking-tight text-sky-900">
-          Sea Supply Hub
+        <Link href="/" className="flex items-center" aria-label="Sea Supply Hub homepage">
+          <Image
+            src="/images/sea-supply-logo.svg"
+            alt="Sea Supply Hub"
+            width={512}
+            height={140}
+            priority
+            className="h-9 w-auto sm:h-10 md:h-11 lg:h-12"
+            sizes="(max-width: 640px) 170px, (max-width: 1024px) 220px, 260px"
+          />
         </Link>
         <div className="hidden lg:flex lg:flex-1">
           <PredictiveSearch />

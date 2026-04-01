@@ -25,18 +25,18 @@ import {
 import { buildMetadata } from "@/lib/seo";
 
 const shopByCategory = [
-  { label: "Marine Electrical", href: "/categories/marine-electrical", icon: Battery, image: "/categories/marine-electrical.svg" },
-  { label: "Electronics & Navigation", href: "/categories/electronics-navigation", icon: Compass, image: "/categories/electronics-navigation.svg" },
-  { label: "Boat Docking", href: "/categories/anchor-docking", icon: Anchor, image: "/categories/boat-docking.svg" },
-  { label: "Boat Maintenance", href: "/categories/boat-maintenance", icon: Wrench, image: "/categories/boat-maintenance.svg" },
-  { label: "Engine Systems", href: "/categories/engine-systems", icon: Settings, image: "/categories/engine-systems.svg" },
-  { label: "Safety", href: "/categories/safety", icon: Shield, image: "/categories/safety.svg" },
-  { label: "Marine Plumbing", href: "/categories/plumbing", icon: Settings, image: "/categories/marine-plumbing.svg" },
-  { label: "Fishing", href: "/categories/fishing", icon: Fish, image: "/categories/fishing.svg" },
-  { label: "Outdoor Living", href: "/categories/cabin-galley", icon: LifeBuoy, image: "/categories/outdoor-living.svg" },
-  { label: "Boats", href: "/categories/boats-motors", icon: Anchor, image: "/categories/boats.svg" },
-  { label: "Outboard Motors", href: "/categories/boats-motors", icon: Settings, image: "/categories/outboard-motors.svg" },
-  { label: "Anchoring", href: "/categories/anchor-docking", icon: Anchor, image: "/categories/anchoring.svg" },
+  { label: "Marine Electrical", href: "/categories/marine-electrical", icon: Battery, image: "/categories/marine-electrical.jpg", imageAlt: "Marine electrical category featuring AGM marine battery" },
+  { label: "Electronics & Navigation", href: "/categories/electronics-navigation", icon: Compass, image: "/categories/electronics-navigation.jpg", imageAlt: "Electronics and navigation category featuring chartplotter display" },
+  { label: "Boat Docking", href: "/categories/anchor-docking", icon: Anchor, image: "/categories/boat-docking.jpg", imageAlt: "Boat docking category featuring marine fenders" },
+  { label: "Boat Maintenance", href: "/categories/boat-maintenance", icon: Wrench, image: "/categories/boat-maintenance.jpg", imageAlt: "Boat maintenance category featuring antifouling paint" },
+  { label: "Engine Systems", href: "/categories/engine-systems", icon: Settings, image: "/categories/engine-systems.png", imageAlt: "Engine systems category featuring marine engine oils and fluids" },
+  { label: "Safety", href: "/categories/safety", icon: Shield, image: "/categories/safety.png", imageAlt: "Marine safety category featuring inflatable life jacket" },
+  { label: "Marine Plumbing", href: "/categories/plumbing", icon: Settings, image: "/categories/marine-plumbing.jpg", imageAlt: "Marine plumbing category featuring bilge pump" },
+  { label: "Fishing", href: "/categories/fishing", icon: Fish, image: "/categories/fishing.jpg", imageAlt: "Fishing category featuring spinning reel" },
+  { label: "Outdoor Living", href: "/categories/cabin-galley", icon: LifeBuoy, image: "/categories/outdoor-living.jpg", imageAlt: "Outdoor living category featuring marine folding chair" },
+  { label: "Boats", href: "/categories/boats-motors", icon: Anchor, image: "/categories/boats.png", imageAlt: "Boats category featuring inflatable dinghy" },
+  { label: "Outboard Motors", href: "/categories/boats-motors", icon: Settings, image: "/categories/outboard-motors.png", imageAlt: "Outboard motors category featuring marine outboard engine" },
+  { label: "Anchoring", href: "/categories/anchor-docking", icon: Anchor, image: "/categories/anchoring.jpg", imageAlt: "Anchoring category featuring stainless steel anchor" },
 ];
 
 const topCollections = [
@@ -88,7 +88,7 @@ export default function HomePage() {
           {shopByCategory.map((item) => (
             <Link key={`image-${item.label}`} href={item.href} className="group overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
               <div className="relative aspect-[4/3] w-full">
-                <Image src={item.image} alt={`${item.label} category image`} fill className="object-cover transition duration-300 group-hover:scale-105" />
+                <Image src={item.image} alt={item.imageAlt} fill className="object-cover transition duration-300 group-hover:scale-105" />
               </div>
               <div className="p-3">
                 <p className="text-sm font-semibold text-slate-900">{item.label}</p>

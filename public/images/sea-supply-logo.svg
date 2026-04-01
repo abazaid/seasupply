@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="140" viewBox="0 0 512 140" fill="none">
+  <defs>
+    <linearGradient id="seaGrad" x1="18" y1="28" x2="124" y2="124" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#19A4DD"/>
+      <stop offset="1" stop-color="#0B4EA2"/>
+    </linearGradient>
+    <linearGradient id="wordGrad" x1="188" y1="44" x2="405" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B4EA2"/>
+      <stop offset="1" stop-color="#19A4DD"/>
+    </linearGradient>
+  </defs>
+  <circle cx="70" cy="70" r="58" fill="url(#seaGrad)"/>
+  <path d="M22 84C36 65 66 57 94 63C82 55 66 52 52 54C38 56 27 63 20 72C21 76 21 80 22 84Z" fill="#0A2F63"/>
+  <path d="M17 78C32 95 57 104 83 103C101 102 116 98 128 89C113 93 95 91 80 87C65 83 52 76 38 72C30 70 23 70 17 78Z" fill="#0B4EA2"/>
+  <path d="M24 64C39 50 60 45 82 49C67 41 47 40 32 48C25 52 20 57 16 63C19 63 22 63 24 64Z" fill="white"/>
+  <path d="M40 88C56 92 76 92 95 87C85 95 72 100 57 102C45 104 31 102 21 95C25 91 31 89 40 88Z" fill="white"/>
+  <text x="145" y="93" fill="#0B4EA2" font-family="'Segoe UI', Arial, sans-serif" font-size="64" font-style="italic" font-weight="800">Sea</text>
+  <text x="266" y="93" fill="url(#wordGrad)" font-family="'Segoe UI', Arial, sans-serif" font-size="64" font-style="italic" font-weight="800">Supply</text>
+  <text x="430" y="58" fill="#0B4EA2" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="800" letter-spacing="7">HUB</text>
+</svg>

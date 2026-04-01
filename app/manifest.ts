@@ -9,7 +9,11 @@ export default function manifest(): MetadataRoute.Manifest {
     display: "standalone",
     background_color: "#f8fafc",
     theme_color: "#0b2447",
-    icons: [{ src: "/images/logo-mark.svg", sizes: "160x32", type: "image/svg+xml" }],
+    icons: [
+      { src: "/images/sea-supply-icon.svg", sizes: "512x512", type: "image/svg+xml", purpose: "any" },
+      { src: "/images/sea-supply-icon.svg", sizes: "512x512", type: "image/svg+xml", purpose: "maskable" },
+      { src: "/images/sea-supply-logo.svg", sizes: "512x140", type: "image/svg+xml" },
+    ],
   };
 }
 
