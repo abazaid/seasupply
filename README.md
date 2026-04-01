@@ -34,6 +34,27 @@ npm run format
 
 Copy `.env.example` to `.env.local` and update values.
 
+## Cache Clear Workflow
+
+Use a secure token to manually trigger cache refresh after frequent updates.
+
+1. Set `CACHE_CLEAR_TOKEN` in your server environment.
+2. Call:
+
+```bash
+curl -X POST https://seasupplyhub.com/api/cache/clear \
+  -H "Content-Type: application/json" \
+  -d '{"token":"YOUR_CACHE_CLEAR_TOKEN"}'
+```
+
+Optional custom paths:
+
+```bash
+curl -X POST https://seasupplyhub.com/api/cache/clear \
+  -H "Content-Type: application/json" \
+  -d '{"token":"YOUR_CACHE_CLEAR_TOKEN","paths":["/","/deals","/brands"]}'
+```
+
 ## Content + Data
 
 - `data/seed/*.json` contains categories, products, brands, articles, FAQs.
