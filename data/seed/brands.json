@@ -1,245 +1,245 @@
 [
-    {
-        "slug":  "west-marine",
-        "name":  "West Marine",
-        "description":  "Marine retail private-label and accessory catalog reference brand.",
-        "website":  "https://www.westmarine.com",
-        "logoText":  "WEST MARINE",
-        "featured":  true,
-        "logoUrl":  "/brands/west-marine.svg"
-    },
-    {
-        "slug":  "garmin",
-        "name":  "Garmin",
-        "description":  "Marine navigation and sonar electronics.",
-        "website":  "https://www.garmin.com",
-        "logoText":  "GARMIN",
-        "featured":  true,
-        "logoUrl":  "/brands/garmin.svg"
-    },
-    {
-        "slug":  "starlink",
-        "name":  "Starlink",
-        "description":  "Maritime satellite internet connectivity.",
-        "website":  "https://www.starlink.com",
-        "logoText":  "STARLINK",
-        "featured":  true,
-        "logoUrl":  "/brands/starlink.svg"
-    },
-    {
-        "slug":  "pettit-paint",
-        "name":  "Pettit Paint",
-        "description":  "Marine coatings and antifouling systems.",
-        "website":  "https://www.pettitpaint.com",
-        "logoText":  "PETTIT",
-        "featured":  true,
-        "logoUrl":  "/brands/pettit-paint.svg"
-    },
-    {
-        "slug":  "taylor-made",
-        "name":  "Taylor Made",
-        "description":  "Marine fender and dock accessories.",
-        "website":  "https://www.taylormadeproducts.com",
-        "logoText":  "TAYLOR MADE",
-        "featured":  true,
-        "logoUrl":  "/brands/taylor-made.svg"
-    },
-    {
-        "slug":  "simrad",
-        "name":  "Simrad",
-        "description":  "Advanced marine navigation and fishfinding systems.",
-        "website":  "https://www.simrad-yachting.com",
-        "logoText":  "SIMRAD",
-        "featured":  true,
-        "logoUrl":  "/brands/simrad.svg"
-    },
-    {
-        "slug":  "suzuki-marine",
-        "name":  "Suzuki Marine",
-        "description":  "Outboard propulsion and marine engine products.",
-        "website":  "https://www.suzukimarine.com",
-        "logoText":  "SUZUKI",
-        "featured":  true,
-        "logoUrl":  "/brands/suzuki-marine.svg"
-    },
-    {
-        "slug":  "new-england-ropes",
-        "name":  "New England Ropes",
-        "description":  "Marine rope and line systems for sailing and docking.",
-        "website":  "https://www.neropes.com",
-        "logoText":  "NEW ENGLAND ROPES",
-        "featured":  true,
-        "logoUrl":  "/brands/new-england-ropes.svg"
-    },
-    {
-        "slug":  "ancor",
-        "name":  "Ancor",
-        "description":  "Marine electrical wiring and connectors.",
-        "website":  "https://www.ancorproducts.com",
-        "logoText":  "ANCOR",
-        "featured":  true,
-        "logoUrl":  "/brands/ancor.svg"
-    },
-    {
-        "slug":  "yamaha",
-        "name":  "Yamaha Marine",
-        "description":  "Outboard technology and service ecosystem.",
-        "website":  "https://yamahaoutboards.com",
-        "logoText":  "YAMAHA",
-        "featured":  true,
-        "logoUrl":  "/brands/yamaha.svg"
-    },
-    {
-        "slug":  "rule-industries",
-        "name":  "Rule Industries",
-        "description":  "Bilge pump and marine water management solutions.",
-        "website":  "https://www.rulepumps.com",
-        "logoText":  "RULE",
-        "featured":  true,
-        "logoUrl":  "/brands/rule-industries.svg"
-    },
-    {
-        "slug":  "orion",
-        "name":  "Orion Safety",
-        "description":  "Marine and emergency signaling safety products.",
-        "website":  "https://www.orionsignals.com",
-        "logoText":  "ORION",
-        "featured":  true,
-        "logoUrl":  "/brands/orion.svg"
-    },
-    {
-        "slug":  "west-system",
-        "name":  "West System",
-        "description":  "Marine epoxy and repair materials.",
-        "website":  "https://www.westsystem.com",
-        "logoText":  "WEST SYSTEM",
-        "featured":  true,
-        "logoUrl":  "/brands/west-system.svg"
-    },
-    {
-        "slug":  "3m",
-        "name":  "3M Marine",
-        "description":  "Marine tapes, compounds, and finishing products.",
-        "website":  "https://www.3m.com",
-        "logoText":  "3M",
-        "featured":  true,
-        "logoUrl":  "/brands/3m.jpg"
-    },
-    {
-        "slug":  "marinco",
-        "name":  "Marinco",
-        "description":  "Shore power and marine electrical accessories.",
-        "website":  "https://www.marinco.com",
-        "logoText":  "MARINCO",
-        "featured":  true,
-        "logoUrl":  "/brands/marinco.svg"
-    },
-    {
-        "slug":  "yeti",
-        "name":  "YETI",
-        "description":  "Premium coolers and outdoor gear for boaters.",
-        "website":  "https://www.yeti.com",
-        "logoText":  "YETI",
-        "featured":  true,
-        "logoUrl":  "/brands/yeti.svg"
-    },
-    {
-        "slug":  "odyssey",
-        "name":  "Odyssey Battery",
-        "description":  "High-performance marine battery solutions.",
-        "website":  "https://www.odysseybattery.com",
-        "logoText":  "ODYSSEY",
-        "featured":  true,
-        "logoUrl":  "/brands/odyssey.svg"
-    },
-    {
-        "slug":  "mercury-marine",
-        "name":  "Mercury Marine",
-        "description":  "Marine propulsion and outboard systems.",
-        "website":  "https://www.mercurymarine.com",
-        "logoText":  "MERCURY",
-        "featured":  true,
-        "logoUrl":  "/brands/mercury-marine.svg"
-    },
-    {
-        "slug":  "raymarine",
-        "name":  "Raymarine",
-        "description":  "Integrated marine electronics including radar and autopilot.",
-        "website":  "https://www.raymarine.com",
-        "logoText":  "RAYMARINE",
-        "featured":  true,
-        "logoUrl":  "/brands/raymarine.svg"
-    },
-    {
-        "slug":  "minn-kota",
-        "name":  "Minn Kota",
-        "description":  "Electric trolling motors and controls.",
-        "website":  "https://www.minnkotamotors.com",
-        "logoText":  "MINN KOTA",
-        "featured":  true,
-        "logoUrl":  "/brands/minn-kota.svg"
-    },
-    {
-        "slug":  "blue-sea-systems",
-        "name":  "Blue Sea Systems",
-        "description":  "Marine electrical distribution and protection components.",
-        "website":  "https://www.bluesea.com",
-        "logoText":  "BLUE SEA",
-        "featured":  true,
-        "logoUrl":  "/brands/blue-sea-systems.svg"
-    },
-    {
-        "slug":  "lewmar",
-        "name":  "Lewmar",
-        "description":  "Anchoring and sailing deck hardware.",
-        "website":  "https://www.lewmar.com",
-        "logoText":  "LEWMAR",
-        "featured":  false,
-        "logoUrl":  "/brands/lewmar.svg"
-    },
-    {
-        "slug":  "mustang-survival",
-        "name":  "Mustang Survival",
-        "description":  "Marine flotation and safety apparel.",
-        "website":  "https://mustangsurvival.com",
-        "logoText":  "MUSTANG",
-        "featured":  false,
-        "logoUrl":  "/brands/mustang-survival.svg"
-    },
-    {
-        "slug":  "shurflo",
-        "name":  "SHURFLO",
-        "description":  "Marine pumps and fluid systems.",
-        "website":  "https://www.pentair.com",
-        "logoText":  "SHURFLO",
-        "featured":  false,
-        "logoUrl":  "/brands/shurflo.svg"
-    },
-    {
-        "slug":  "victron",
-        "name":  "Victron Energy",
-        "description":  "Marine charging and inverter systems.",
-        "website":  "https://www.victronenergy.com",
-        "logoText":  "VICTRON",
-        "featured":  false,
-        "logoUrl":  "/brands/victron.svg"
-    },
-    {
-        "slug":  "attwood",
-        "name":  "Attwood",
-        "description":  "General marine accessories and maintenance products.",
-        "website":  "https://www.attwoodmarine.com",
-        "logoText":  "ATTWOOD",
-        "featured":  false,
-        "logoUrl":  "/brands/attwood.svg"
-    },
-    {
-        "slug":  "shakespeare",
-        "name":  "Shakespeare Marine",
-        "description":  "Marine communication antennas and accessories.",
-        "website":  "https://shakespeare-ce.com",
-        "logoText":  "SHAKESPEARE",
-        "featured":  false,
-        "logoUrl":  "/brands/shakespeare.svg"
-    }
+  {
+    "slug": "west-marine",
+    "name": "West Marine",
+    "description": "Marine retail private-label and accessory catalog reference brand.",
+    "website": "https://www.westmarine.com",
+    "logoText": "WEST MARINE",
+    "featured": true,
+    "logoUrl": "/brands/west-marine.webp"
+  },
+  {
+    "slug": "garmin",
+    "name": "Garmin",
+    "description": "Marine navigation and sonar electronics.",
+    "website": "https://www.garmin.com",
+    "logoText": "GARMIN",
+    "featured": true,
+    "logoUrl": "/brands/garmin.webp"
+  },
+  {
+    "slug": "starlink",
+    "name": "Starlink",
+    "description": "Maritime satellite internet connectivity.",
+    "website": "https://www.starlink.com",
+    "logoText": "STARLINK",
+    "featured": true,
+    "logoUrl": "/brands/starlink.webp"
+  },
+  {
+    "slug": "pettit-paint",
+    "name": "Pettit Paint",
+    "description": "Marine coatings and antifouling systems.",
+    "website": "https://www.pettitpaint.com",
+    "logoText": "PETTIT",
+    "featured": true,
+    "logoUrl": "/brands/pettit-paint.webp"
+  },
+  {
+    "slug": "taylor-made",
+    "name": "Taylor Made",
+    "description": "Marine fender and dock accessories.",
+    "website": "https://www.taylormadeproducts.com",
+    "logoText": "TAYLOR MADE",
+    "featured": true,
+    "logoUrl": "/brands/taylor-made.webp"
+  },
+  {
+    "slug": "simrad",
+    "name": "Simrad",
+    "description": "Advanced marine navigation and fishfinding systems.",
+    "website": "https://www.simrad-yachting.com",
+    "logoText": "SIMRAD",
+    "featured": true,
+    "logoUrl": "/brands/simrad.webp"
+  },
+  {
+    "slug": "suzuki-marine",
+    "name": "Suzuki Marine",
+    "description": "Outboard propulsion and marine engine products.",
+    "website": "https://www.suzukimarine.com",
+    "logoText": "SUZUKI",
+    "featured": true,
+    "logoUrl": "/brands/suzuki-marine.webp"
+  },
+  {
+    "slug": "new-england-ropes",
+    "name": "New England Ropes",
+    "description": "Marine rope and line systems for sailing and docking.",
+    "website": "https://www.neropes.com",
+    "logoText": "NEW ENGLAND ROPES",
+    "featured": true,
+    "logoUrl": "/brands/new-england-ropes.webp"
+  },
+  {
+    "slug": "ancor",
+    "name": "Ancor",
+    "description": "Marine electrical wiring and connectors.",
+    "website": "https://www.ancorproducts.com",
+    "logoText": "ANCOR",
+    "featured": true,
+    "logoUrl": "/brands/ancor.webp"
+  },
+  {
+    "slug": "yamaha",
+    "name": "Yamaha Marine",
+    "description": "Outboard technology and service ecosystem.",
+    "website": "https://yamahaoutboards.com",
+    "logoText": "YAMAHA",
+    "featured": true,
+    "logoUrl": "/brands/yamaha.webp"
+  },
+  {
+    "slug": "rule-industries",
+    "name": "Rule Industries",
+    "description": "Bilge pump and marine water management solutions.",
+    "website": "https://www.rulepumps.com",
+    "logoText": "RULE",
+    "featured": true,
+    "logoUrl": "/brands/rule-industries.webp"
+  },
+  {
+    "slug": "orion",
+    "name": "Orion Safety",
+    "description": "Marine and emergency signaling safety products.",
+    "website": "https://www.orionsignals.com",
+    "logoText": "ORION",
+    "featured": true,
+    "logoUrl": "/brands/orion.webp"
+  },
+  {
+    "slug": "west-system",
+    "name": "West System",
+    "description": "Marine epoxy and repair materials.",
+    "website": "https://www.westsystem.com",
+    "logoText": "WEST SYSTEM",
+    "featured": true,
+    "logoUrl": "/brands/west-system.webp"
+  },
+  {
+    "slug": "3m",
+    "name": "3M Marine",
+    "description": "Marine tapes, compounds, and finishing products.",
+    "website": "https://www.3m.com",
+    "logoText": "3M",
+    "featured": true,
+    "logoUrl": "/brands/3m.jpg"
+  },
+  {
+    "slug": "marinco",
+    "name": "Marinco",
+    "description": "Shore power and marine electrical accessories.",
+    "website": "https://www.marinco.com",
+    "logoText": "MARINCO",
+    "featured": true,
+    "logoUrl": "/brands/marinco.webp"
+  },
+  {
+    "slug": "yeti",
+    "name": "YETI",
+    "description": "Premium coolers and outdoor gear for boaters.",
+    "website": "https://www.yeti.com",
+    "logoText": "YETI",
+    "featured": true,
+    "logoUrl": "/brands/yeti.webp"
+  },
+  {
+    "slug": "odyssey",
+    "name": "Odyssey Battery",
+    "description": "High-performance marine battery solutions.",
+    "website": "https://www.odysseybattery.com",
+    "logoText": "ODYSSEY",
+    "featured": true,
+    "logoUrl": "/brands/odyssey.webp"
+  },
+  {
+    "slug": "mercury-marine",
+    "name": "Mercury Marine",
+    "description": "Marine propulsion and outboard systems.",
+    "website": "https://www.mercurymarine.com",
+    "logoText": "MERCURY",
+    "featured": true,
+    "logoUrl": "/brands/mercury-marine.webp"
+  },
+  {
+    "slug": "raymarine",
+    "name": "Raymarine",
+    "description": "Integrated marine electronics including radar and autopilot.",
+    "website": "https://www.raymarine.com",
+    "logoText": "RAYMARINE",
+    "featured": true,
+    "logoUrl": "/brands/raymarine.svg"
+  },
+  {
+    "slug": "minn-kota",
+    "name": "Minn Kota",
+    "description": "Electric trolling motors and controls.",
+    "website": "https://www.minnkotamotors.com",
+    "logoText": "MINN KOTA",
+    "featured": true,
+    "logoUrl": "/brands/minn-kota.svg"
+  },
+  {
+    "slug": "blue-sea-systems",
+    "name": "Blue Sea Systems",
+    "description": "Marine electrical distribution and protection components.",
+    "website": "https://www.bluesea.com",
+    "logoText": "BLUE SEA",
+    "featured": true,
+    "logoUrl": "/brands/blue-sea-systems.svg"
+  },
+  {
+    "slug": "lewmar",
+    "name": "Lewmar",
+    "description": "Anchoring and sailing deck hardware.",
+    "website": "https://www.lewmar.com",
+    "logoText": "LEWMAR",
+    "featured": false,
+    "logoUrl": "/brands/lewmar.svg"
+  },
+  {
+    "slug": "mustang-survival",
+    "name": "Mustang Survival",
+    "description": "Marine flotation and safety apparel.",
+    "website": "https://mustangsurvival.com",
+    "logoText": "MUSTANG",
+    "featured": false,
+    "logoUrl": "/brands/mustang-survival.svg"
+  },
+  {
+    "slug": "shurflo",
+    "name": "SHURFLO",
+    "description": "Marine pumps and fluid systems.",
+    "website": "https://www.pentair.com",
+    "logoText": "SHURFLO",
+    "featured": false,
+    "logoUrl": "/brands/shurflo.svg"
+  },
+  {
+    "slug": "victron",
+    "name": "Victron Energy",
+    "description": "Marine charging and inverter systems.",
+    "website": "https://www.victronenergy.com",
+    "logoText": "VICTRON",
+    "featured": false,
+    "logoUrl": "/brands/victron.svg"
+  },
+  {
+    "slug": "attwood",
+    "name": "Attwood",
+    "description": "General marine accessories and maintenance products.",
+    "website": "https://www.attwoodmarine.com",
+    "logoText": "ATTWOOD",
+    "featured": false,
+    "logoUrl": "/brands/attwood.svg"
+  },
+  {
+    "slug": "shakespeare",
+    "name": "Shakespeare Marine",
+    "description": "Marine communication antennas and accessories.",
+    "website": "https://shakespeare-ce.com",
+    "logoText": "SHAKESPEARE",
+    "featured": false,
+    "logoUrl": "/brands/shakespeare.svg"
+  }
 ]
