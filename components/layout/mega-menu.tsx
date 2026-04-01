@@ -2,14 +2,36 @@
 
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { categories } from "@/data";
 
 export function MegaMenu() {
   const [open, setOpen] = useState(false);
+  const rootRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    function onPointerDown(event: MouseEvent) {
+      if (!rootRef.current) return;
+      if (!rootRef.current.contains(event.target as Node)) {
+        setOpen(false);
+      }
+    }
+
+    function onEscape(event: KeyboardEvent) {
+      if (event.key === "Escape") setOpen(false);
+    }
+
+    document.addEventListener("mousedown", onPointerDown);
+    document.addEventListener("keydown", onEscape);
+
+    return () => {
+      document.removeEventListener("mousedown", onPointerDown);
+      document.removeEventListener("keydown", onEscape);
+    };
+  }, []);
 
   return (
-    <div className="relative hidden border-t border-slate-200 bg-white lg:block">
+    <div ref={rootRef} className="relative hidden border-t border-slate-200 bg-white lg:block">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-3">
         <button
           type="button"
@@ -23,9 +45,9 @@ export function MegaMenu() {
         </button>
 
         <div className="flex items-center gap-5 text-sm text-slate-600">
-          <Link href="/brands" className="hover:text-slate-900">Brands</Link>
-          <Link href="/featured-collections" className="hover:text-slate-900">Collections</Link>
-          <Link href="/resources" className="hover:text-slate-900">Resources</Link>
+          <Link href="/brands" className="hover:text-slate-900" onClick={() => setOpen(false)}>Brands</Link>
+          <Link href="/featured-collections" className="hover:text-slate-900" onClick={() => setOpen(false)}>Collections</Link>
+          <Link href="/resources" className="hover:text-slate-900" onClick={() => setOpen(false)}>Resources</Link>
         </div>
       </div>
 
