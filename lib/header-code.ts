@@ -34,14 +34,23 @@ export type ParsedHeadTag = {
 
 export function parseHeadCode(code: string) {
   const items: ParsedHeadTag[] = [];
-  const tagRegex = /<(meta|link|script|style|noscript)\b([^>]*?)(?:\/>|>([\s\S]*?)<\/\1>)/gi;
-  let match: RegExpExecArray | null = null;
-
-  while ((match = tagRegex.exec(code)) !== null) {
-    const tag = match[1].toLowerCase() as ParsedHeadTag["tag"];
-    const attrs = parseAttributes(match[2] ?? "");
-    const inner = (match[3] ?? "").trim();
+  // Paired tags
+  const pairedTagRegex = /<(script|style|noscript)\b([^>]*?)>([\s\S]*?)<\/\1>/gi;
+  let pairedMatch: RegExpExecArray | null = null;
+  while ((pairedMatch = pairedTagRegex.exec(code)) !== null) {
+    const tag = pairedMatch[1].toLowerCase() as ParsedHeadTag["tag"];
+    const attrs = parseAttributes(pairedMatch[2] ?? "");
+    const inner = (pairedMatch[3] ?? "").trim();
     items.push({ tag, attrs, inner });
+  }
+
+  // Standalone/void tags (supports both <meta ...> and <meta ... />)
+  const voidTagRegex = /<(meta|link)\b([^>]*?)\/?>/gi;
+  let voidMatch: RegExpExecArray | null = null;
+  while ((voidMatch = voidTagRegex.exec(code)) !== null) {
+    const tag = voidMatch[1].toLowerCase() as ParsedHeadTag["tag"];
+    const attrs = parseAttributes(voidMatch[2] ?? "");
+    items.push({ tag, attrs, inner: "" });
   }
 
   return items;
