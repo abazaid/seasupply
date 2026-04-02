@@ -34,6 +34,16 @@ npm run format
 
 Copy `.env.example` to `.env.local` and update values.
 
+## Admin Header Code Panel
+
+- Login page: `/admin/login`
+- Panel page: `/admin`
+- Save custom head code from the `Header` textarea (scripts/meta/link/style/noscript supported).
+- Credentials are controlled by:
+  - `ADMIN_USERNAME`
+  - `ADMIN_PASSWORD`
+  - `ADMIN_SESSION_SECRET`
+
 ## Content + Data
 
 - `data/seed/*.json` contains categories, products, brands, articles, FAQs.
