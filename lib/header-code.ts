@@ -1,8 +1,11 @@
 import fs from "fs/promises";
 import path from "path";
 
-const runtimeDir = path.join(process.cwd(), "data", "runtime");
-const runtimeFile = path.join(runtimeDir, "header-code.json");
+function getRuntimeFile() {
+  const customFile = process.env.HEADER_CODE_FILE?.trim();
+  if (customFile) return customFile;
+  return path.join(process.cwd(), "data", "runtime", "header-code.json");
+}
 
 type HeaderCodeStore = { headerCode: string; updatedAt: string };
 type HeaderCodeCache = { value: string; expiresAt: number };
@@ -45,6 +48,8 @@ export function parseHeadCode(code: string) {
 }
 
 async function ensureRuntimeStore() {
+  const runtimeFile = getRuntimeFile();
+  const runtimeDir = path.dirname(runtimeFile);
   await fs.mkdir(runtimeDir, { recursive: true });
   try {
     await fs.access(runtimeFile);
@@ -61,6 +66,7 @@ export async function readHeaderCode() {
       return headerCodeCache.value;
     }
 
+    const runtimeFile = getRuntimeFile();
     await ensureRuntimeStore();
     const raw = await fs.readFile(runtimeFile, "utf8");
     const parsed = JSON.parse(raw) as HeaderCodeStore;
@@ -73,6 +79,7 @@ export async function readHeaderCode() {
 }
 
 export async function writeHeaderCode(headerCode: string) {
+  const runtimeFile = getRuntimeFile();
   await ensureRuntimeStore();
   const normalized = headerCode.slice(0, 20000);
   const payload: HeaderCodeStore = {

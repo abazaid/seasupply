@@ -43,6 +43,8 @@ Copy `.env.example` to `.env.local` and update values.
   - `ADMIN_USERNAME`
   - `ADMIN_PASSWORD`
   - `ADMIN_SESSION_SECRET`
+- Persistent storage path for saved head code:
+  - `HEADER_CODE_FILE` (use a mounted volume path on Coolify, e.g. `/data/seasupply/header-code.json`)
 
 ## Content + Data
 
