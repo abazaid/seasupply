@@ -59,6 +59,10 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
   return (
     <html lang="en" className={`${sans.variable} ${serif.variable}`}>
       <head>
+        <script
+          type="text/javascript"
+          src="http://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=2cfb4aaef52727b845753ac9ca8ff2afbe5c0e77"
+        />
         {tags.map((item, index) => {
           const attrs: Record<string, string> = {};
           for (const [key, value] of Object.entries(item.attrs)) {
