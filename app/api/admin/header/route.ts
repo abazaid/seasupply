@@ -26,7 +26,8 @@ export async function POST(request: Request) {
 
   try {
     await writeHeaderCode(headerCode);
-    return NextResponse.json({ ok: true, saved: true });
+    const persisted = await readHeaderCode();
+    return NextResponse.json({ ok: true, saved: true, headerCode: persisted });
   } catch {
     return NextResponse.json({ ok: false, error: "Unable to save header code" }, { status: 500 });
   }

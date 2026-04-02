@@ -25,8 +25,14 @@ export function HeaderCodeForm({ initialValue }: HeaderCodeFormProps) {
       return;
     }
 
+    const payload = (await response.json().catch(() => ({}))) as { headerCode?: string };
+    if (typeof payload.headerCode === "string") {
+      setValue(payload.headerCode);
+    }
     setStatus("saved");
-    router.refresh();
+    setTimeout(() => {
+      router.refresh();
+    }, 150);
   }
 
   async function logout() {
@@ -63,4 +69,3 @@ export function HeaderCodeForm({ initialValue }: HeaderCodeFormProps) {
     </section>
   );
 }
-

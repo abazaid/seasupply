@@ -74,7 +74,7 @@ export async function readHeaderCode() {
     headerCodeCache = { value, expiresAt: now + 30_000 };
     return value;
   } catch {
-    return "";
+    return headerCodeCache?.value ?? "";
   }
 }
 
