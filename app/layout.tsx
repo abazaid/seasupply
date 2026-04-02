@@ -7,10 +7,19 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { UtilityBar } from "@/components/layout/utility-bar";
 import { StructuredData } from "@/components/shared/structured-data";
 import { siteConfig } from "@/config/site";
+import { parseHeadCode, readHeaderCode } from "@/lib/header-code";
 import { organizationSchema, websiteSchema } from "@/lib/schema";
 
 const sans = Manrope({ subsets: ["latin"], variable: "--font-sans", display: "swap", preload: false });
 const serif = Source_Serif_4({ subsets: ["latin"], variable: "--font-serif", display: "swap", preload: false });
+
+function normalizeAttrName(name: string) {
+  if (name === "http-equiv") return "httpEquiv";
+  if (name === "crossorigin") return "crossOrigin";
+  if (name === "referrerpolicy") return "referrerPolicy";
+  if (name === "charset") return "charSet";
+  return name;
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -42,9 +51,45 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const code = await readHeaderCode();
+  const tags = parseHeadCode(code);
+
   return (
     <html lang="en" className={`${sans.variable} ${serif.variable}`}>
+      <head>
+        {tags.map((item, index) => {
+          const attrs: Record<string, string> = {};
+          for (const [key, value] of Object.entries(item.attrs)) {
+            attrs[normalizeAttrName(key)] = value;
+          }
+
+          if (item.tag === "script") {
+            if (item.inner) {
+              return <script key={`head-script-${index}`} {...attrs} dangerouslySetInnerHTML={{ __html: item.inner }} />;
+            }
+            return <script key={`head-script-${index}`} {...attrs} />;
+          }
+
+          if (item.tag === "style") {
+            return <style key={`head-style-${index}`} {...attrs} dangerouslySetInnerHTML={{ __html: item.inner }} />;
+          }
+
+          if (item.tag === "noscript") {
+            return <noscript key={`head-noscript-${index}`} {...attrs} dangerouslySetInnerHTML={{ __html: item.inner }} />;
+          }
+
+          if (item.tag === "meta") {
+            if (attrs.value && !attrs.content) {
+              attrs.content = attrs.value;
+              delete attrs.value;
+            }
+            return <meta key={`head-meta-${index}`} {...attrs} />;
+          }
+
+          return <link key={`head-link-${index}`} {...attrs} />;
+        })}
+      </head>
       <body className="font-[var(--font-sans)] antialiased">
         <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus:z-[70] focus:rounded-md focus:bg-white focus:px-3 focus:py-2">
           Skip to content
@@ -62,4 +107,3 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     </html>
   );
 }
-
