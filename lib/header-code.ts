@@ -1,11 +1,13 @@
 import fs from "fs/promises";
 import path from "path";
-import { unstable_noStore as noStore } from "next/cache";
 
 const runtimeDir = path.join(process.cwd(), "data", "runtime");
 const runtimeFile = path.join(runtimeDir, "header-code.json");
 
 type HeaderCodeStore = { headerCode: string; updatedAt: string };
+type HeaderCodeCache = { value: string; expiresAt: number };
+
+let headerCodeCache: HeaderCodeCache | null = null;
 
 function parseAttributes(input: string) {
   const attrs: Record<string, string> = {};
@@ -53,19 +55,32 @@ async function ensureRuntimeStore() {
 }
 
 export async function readHeaderCode() {
-  noStore();
-  await ensureRuntimeStore();
-  const raw = await fs.readFile(runtimeFile, "utf8");
-  const parsed = JSON.parse(raw) as HeaderCodeStore;
-  return parsed.headerCode ?? "";
+  try {
+    const now = Date.now();
+    if (headerCodeCache && headerCodeCache.expiresAt > now) {
+      return headerCodeCache.value;
+    }
+
+    await ensureRuntimeStore();
+    const raw = await fs.readFile(runtimeFile, "utf8");
+    const parsed = JSON.parse(raw) as HeaderCodeStore;
+    const value = parsed.headerCode ?? "";
+    headerCodeCache = { value, expiresAt: now + 30_000 };
+    return value;
+  } catch {
+    return "";
+  }
 }
 
 export async function writeHeaderCode(headerCode: string) {
   await ensureRuntimeStore();
+  const normalized = headerCode.slice(0, 20000);
   const payload: HeaderCodeStore = {
-    headerCode,
+    headerCode: normalized,
     updatedAt: new Date().toISOString(),
   };
-  await fs.writeFile(runtimeFile, JSON.stringify(payload, null, 2), "utf8");
+  const tmpFile = `${runtimeFile}.tmp`;
+  await fs.writeFile(tmpFile, JSON.stringify(payload, null, 2), "utf8");
+  await fs.rename(tmpFile, runtimeFile);
+  headerCodeCache = { value: normalized, expiresAt: Date.now() + 30_000 };
 }
-

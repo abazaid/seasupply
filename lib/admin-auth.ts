@@ -30,17 +30,24 @@ export function createAdminSession(username: string) {
 }
 
 export function verifyAdminSession(sessionValue: string | undefined) {
-  if (!sessionValue) return false;
+  try {
+    if (!sessionValue) return false;
 
-  const [username, expiresRaw, signature] = sessionValue.split(".");
-  if (!username || !expiresRaw || !signature) return false;
+    const [username, expiresRaw, signature] = sessionValue.split(".");
+    if (!username || !expiresRaw || !signature) return false;
 
-  const expiresAt = Number(expiresRaw);
-  if (!Number.isFinite(expiresAt) || expiresAt < Math.floor(Date.now() / 1000)) return false;
+    const expiresAt = Number(expiresRaw);
+    if (!Number.isFinite(expiresAt) || expiresAt < Math.floor(Date.now() / 1000)) return false;
 
-  const { secret } = getCredentials();
-  const expected = sign(`${username}.${expiresAt}`, secret);
-  return crypto.timingSafeEqual(Buffer.from(signature), Buffer.from(expected));
+    const { secret } = getCredentials();
+    const expected = sign(`${username}.${expiresAt}`, secret);
+    const sig = Buffer.from(signature);
+    const exp = Buffer.from(expected);
+    if (sig.length !== exp.length) return false;
+    return crypto.timingSafeEqual(sig, exp);
+  } catch {
+    return false;
+  }
 }
 
 export async function isAdminAuthenticated() {
@@ -50,4 +57,3 @@ export async function isAdminAuthenticated() {
 }
 
 export const adminSessionCookieName = SESSION_COOKIE;
-

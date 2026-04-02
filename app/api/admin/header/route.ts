@@ -10,8 +10,12 @@ function unauthorized() {
 
 export async function GET() {
   if (!(await isAdminAuthenticated())) return unauthorized();
-  const headerCode = await readHeaderCode();
-  return NextResponse.json({ ok: true, headerCode });
+  try {
+    const headerCode = await readHeaderCode();
+    return NextResponse.json({ ok: true, headerCode });
+  } catch {
+    return NextResponse.json({ ok: false, error: "Unable to read header code" }, { status: 500 });
+  }
 }
 
 export async function POST(request: Request) {
@@ -20,7 +24,10 @@ export async function POST(request: Request) {
   const body = (await request.json().catch(() => ({}))) as SaveBody;
   const headerCode = body.headerCode ?? "";
 
-  await writeHeaderCode(headerCode);
-  return NextResponse.json({ ok: true, saved: true });
+  try {
+    await writeHeaderCode(headerCode);
+    return NextResponse.json({ ok: true, saved: true });
+  } catch {
+    return NextResponse.json({ ok: false, error: "Unable to save header code" }, { status: 500 });
+  }
 }
-
