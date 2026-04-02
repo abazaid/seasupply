@@ -12,6 +12,7 @@ import { organizationSchema, websiteSchema } from "@/lib/schema";
 
 const sans = Manrope({ subsets: ["latin"], variable: "--font-sans", display: "swap", preload: false });
 const serif = Source_Serif_4({ subsets: ["latin"], variable: "--font-serif", display: "swap", preload: false });
+export const dynamic = "force-dynamic";
 
 function normalizeAttrName(name: string) {
   if (name === "http-equiv") return "httpEquiv";
