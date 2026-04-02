@@ -38,6 +38,11 @@ export default async function Head() {
         }
 
         if (item.tag === "meta") {
+          // Many verification snippets use `value`, while HTML meta should use `content`.
+          if (attrs.value && !attrs.content) {
+            attrs.content = attrs.value;
+            delete attrs.value;
+          }
           return <meta key={`head-meta-${index}`} {...attrs} />;
         }
 
@@ -46,4 +51,3 @@ export default async function Head() {
     </>
   );
 }
-
