@@ -80,6 +80,23 @@ function normalizeSentence(value) {
   return withEnd.charAt(0).toUpperCase() + withEnd.slice(1);
 }
 
+function parsePriceValue(value) {
+  if (typeof value === "number" && Number.isFinite(value)) return value;
+  if (typeof value !== "string") return undefined;
+  const raw = value.replace(/,/g, "").match(/-?\d+(\.\d+)?/);
+  if (!raw) return undefined;
+  const parsed = Number(raw[0]);
+  return Number.isFinite(parsed) ? parsed : undefined;
+}
+
+function firstPrice(item, keys) {
+  for (const key of keys) {
+    const parsed = parsePriceValue(item?.[key]);
+    if (typeof parsed === "number") return parsed;
+  }
+  return undefined;
+}
+
 function deepFindArrays(obj, out = []) {
   if (!obj || typeof obj !== "object") return out;
   if (Array.isArray(obj)) {
@@ -305,6 +322,10 @@ function mapItemToProduct(item, brands, categories) {
 
   const imageUrl = pickFirstString(item, ["ImageUrl", "ImageURL", "LargeImageUrl", "DefaultImageUrl", "Image"]) || "/images/products/placeholder-product-1.svg";
   const sku = pickFirstString(item, ["Sku", "SKU", "Mpn", "MPN", "ModelNumber"]) || `IMP-${slugify(name)}`;
+  const price = firstPrice(item, ["SalePrice", "CurrentPrice", "Price", "Amount", "MinPrice"]);
+  const compareAtPrice = firstPrice(item, ["RetailPrice", "OriginalPrice", "RegularPrice", "MaxPrice", "MSRP"]);
+  const currency =
+    pickFirstString(item, ["Currency", "CurrencyCode", "currencyCode"]).toUpperCase() || "USD";
 
   return {
     id: `IMP-${id}`,
@@ -312,6 +333,12 @@ function mapItemToProduct(item, brands, categories) {
     name,
     seoTitle: seo.seoTitle,
     seoDescription: seo.seoDescription,
+    price,
+    compareAtPrice:
+      typeof compareAtPrice === "number" && typeof price === "number" && compareAtPrice > price
+        ? compareAtPrice
+        : undefined,
+    currency,
     brandSlug,
     categorySlug: category.slug,
     subcategorySlug: subcategory.slug,
@@ -389,12 +416,15 @@ async function main() {
       url.searchParams.set(key, String(value));
     });
 
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 20000);
     const response = await fetch(url.toString(), {
       headers: {
         Authorization: authHeader,
         Accept: "application/json",
       },
-    });
+      signal: controller.signal,
+    }).finally(() => clearTimeout(timeout));
 
     const text = await response.text();
     if (!response.ok) {

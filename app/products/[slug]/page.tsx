@@ -9,6 +9,7 @@ import { StructuredData } from "@/components/shared/structured-data";
 import { articles, getBrandBySlug, getProductBySlug, getRelatedProducts, products } from "@/data";
 import { breadcrumbSchema, faqSchema, productSchema } from "@/lib/schema";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
+import { formatCurrency } from "@/lib/utils";
 
 type ProductParams = { slug: string };
 
@@ -46,6 +47,13 @@ export default async function ProductPage({ params }: { params: ProductParams | 
   const visibleHighlights = product.highlights.filter((item) => !/seo|source/i.test(item));
   const visiblePros = product.pros.filter((item) => !/seo|metadata/i.test(item));
   const visibleCons = product.cons.filter((item) => !/merchant destination/i.test(item));
+  const currency = product.currency || "USD";
+  const currentPrice = formatCurrency(product.price, currency);
+  const compareAt = formatCurrency(product.compareAtPrice, currency);
+  const hasSale =
+    typeof product.price === "number" &&
+    typeof product.compareAtPrice === "number" &&
+    product.compareAtPrice > product.price;
 
   const faqItems = [
     { question: "How current is pricing?", answer: "Pricing and availability can change quickly. Use outbound links for live details before checkout." },
@@ -70,6 +78,18 @@ export default async function ProductPage({ params }: { params: ProductParams | 
             </div>
           </div>
           <h1 className="text-3xl font-semibold text-slate-900">{product.name}</h1>
+          <div className="flex items-center gap-3">
+            {currentPrice ? (
+              <>
+                <p className="text-2xl font-bold text-slate-900">{currentPrice}</p>
+                {hasSale && compareAt ? (
+                  <p className="text-base text-slate-500 line-through">{compareAt}</p>
+                ) : null}
+              </>
+            ) : (
+              <p className="text-sm font-medium text-slate-600">Live price available on seller page</p>
+            )}
+          </div>
           <p className="text-slate-700">{product.longDescription}</p>
           <div><h2 className="text-lg font-semibold text-slate-900">Key Highlights</h2><ul className="mt-2 list-disc space-y-1 pl-5 text-slate-700">{(visibleHighlights.length ? visibleHighlights : product.highlights).map((item) => <li key={item}>{item}</li>)}</ul></div>
         </div>
@@ -80,6 +100,7 @@ export default async function ProductPage({ params }: { params: ProductParams | 
           {product.partnerLinks.map((partner) => (
             <div key={partner.url} className="space-y-2 rounded-lg border border-slate-200 p-3">
               <OutboundButton href={partner.url} label={partner.label} />
+              {currentPrice ? <p className="text-sm font-semibold text-slate-900">{currentPrice}</p> : null}
               <p className="text-xs text-slate-600">{partner.merchant} · Last checked {partner.lastChecked}</p>
             </div>
           ))}

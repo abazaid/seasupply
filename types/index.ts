@@ -47,6 +47,9 @@ export interface Product {
   name: string;
   seoTitle?: string;
   seoDescription?: string;
+  price?: number;
+  compareAtPrice?: number;
+  currency?: string;
   brandSlug: string;
   categorySlug: string;
   subcategorySlug: string;

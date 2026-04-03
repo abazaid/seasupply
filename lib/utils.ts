@@ -12,3 +12,12 @@ export function formatDate(date: string) {
     year: "numeric",
   });
 }
+
+export function formatCurrency(amount?: number, currency = "USD") {
+  if (typeof amount !== "number" || Number.isNaN(amount)) return null;
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency,
+    maximumFractionDigits: 2,
+  }).format(amount);
+}

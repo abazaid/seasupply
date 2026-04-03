@@ -273,5 +273,13 @@
     "website": "https://impact.com",
     "logoText": "MARINE-BRAND",
     "featured": false
+  },
+  {
+    "slug": "suunto-emea",
+    "name": "Suunto Emea",
+    "description": "Imported brand profile from Impact catalog feed.",
+    "website": "https://impact.com",
+    "logoText": "SUUNTO-EMEA",
+    "featured": false
   }
 ]
