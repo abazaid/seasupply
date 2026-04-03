@@ -265,5 +265,13 @@
     "website": "https://impact.com",
     "logoText": "STRAP",
     "featured": false
+  },
+  {
+    "slug": "marine-brand",
+    "name": "Marine Brand",
+    "description": "Imported brand profile from Impact catalog feed.",
+    "website": "https://impact.com",
+    "logoText": "MARINE-BRAND",
+    "featured": false
   }
 ]

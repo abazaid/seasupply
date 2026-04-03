@@ -73,6 +73,13 @@ function cleanText(value) {
     .trim();
 }
 
+function normalizeSentence(value) {
+  const text = cleanText(value).replace(/\s*,\s*/g, ", ");
+  if (!text) return "";
+  const withEnd = /[.!?]$/.test(text) ? text : `${text}.`;
+  return withEnd.charAt(0).toUpperCase() + withEnd.slice(1);
+}
+
 function deepFindArrays(obj, out = []) {
   if (!obj || typeof obj !== "object") return out;
   if (Array.isArray(obj)) {
@@ -98,6 +105,7 @@ function inferCategory(text, categories) {
   const checks = [
     { category: "electronics-navigation", subcategory: "chartplotters", keywords: ["chartplotter", "gps", "sonar", "fishfinder", "radar", "vhf", "navigation"] },
     { category: "marine-electrical", subcategory: "batteries", keywords: ["battery", "charger", "inverter", "breaker", "electrical", "power"] },
+    { category: "apparel", subcategory: "base-layers", keywords: ["watch strap", "silicone strap", "wrist", "wearable", "watch band"] },
     { category: "anchor-docking", subcategory: "anchors", keywords: ["anchor", "docking", "fender", "dock line", "windlass", "rode"] },
     { category: "engine-systems", subcategory: "fuel-systems", keywords: ["engine", "fuel", "ignition", "cooling", "filtration", "outboard"] },
     { category: "boat-maintenance", subcategory: "cleaners", keywords: ["cleaner", "wax", "polish", "maintenance", "paint", "antifouling"] },
@@ -142,21 +150,21 @@ function resolveBrandSlug(brandName, brands) {
 function buildSeo(record, categoryName) {
   const name = cleanText(record.name);
   const brand = cleanText(record.brandName || "Marine");
-  const shortSource = cleanText(record.description || `${name} for marine use.`);
+  const shortSource = normalizeSentence(record.description || `${name} for marine use.`);
 
   const seoTitle = trimToLength(`${name} by ${brand} | ${categoryName} at Sea Supply Hub`, 60);
   const seoDescription = trimToLength(
-    `${name} review with key specs, fit notes, and buying guidance. Compare details in ${categoryName} and shop trusted marine sellers.`,
+    `Compare ${name} by ${brand} with key specs, fit notes, and practical buying guidance in ${categoryName}.`,
     158,
   );
 
   const shortDescription = trimToLength(
-    shortSource || `${name} from ${brand} with practical marine performance and compatibility guidance.`,
+    shortSource || `${name} from ${brand} with practical performance and compatibility guidance.`,
     150,
   );
 
   const longDescription = trimToLength(
-    `${name} by ${brand} is positioned for boaters who want dependable ${categoryName.toLowerCase()} performance without guesswork. ${shortSource} Sea Supply Hub rewrites every listing with clear specifications, fit guidance, and practical usage notes so you can evaluate compatibility quickly and purchase with confidence from established marine retailers.`,
+    `${name} by ${brand} is built for reliable performance in ${categoryName.toLowerCase()} setups. ${shortSource} This listing includes clear specifications, compatibility guidance, and practical buying notes so you can compare confidently before purchase.`,
     680,
   );
 
@@ -202,7 +210,10 @@ function buildSpecs(item) {
     if (value) specs.push({ label, value: cleanText(value) });
   }
 
-  if (!specs.length) specs.push({ label: "Source", value: "Impact catalog feed" });
+  if (!specs.length) {
+    const fallbackModel = pickFirstString(item, ["Model", "ModelNumber", "Title", "Name"]);
+    if (fallbackModel) specs.push({ label: "Model", value: cleanText(fallbackModel) });
+  }
   return specs.slice(0, 8);
 }
 
@@ -270,7 +281,11 @@ function mapItemToProduct(item, brands, categories) {
   const url = pickFirstString(item, ["TrackingLink", "TrackingUrl", "Url", "ProductUrl", "Link", "BuyUrl"]);
   if (!/^https?:\/\//i.test(url)) return null;
 
-  const brandName = pickFirstString(item, ["Brand", "BrandName", "Manufacturer", "MerchantName"]);
+  const merchantName = pickFirstString(item, ["MerchantName", "ProgramName"]);
+  let brandName = pickFirstString(item, ["Brand", "BrandName", "Manufacturer"]);
+  if (!brandName || brandName.length < 4 || /^(strap|parts|accessories)$/i.test(brandName)) {
+    brandName = merchantName;
+  }
   const brandSlug = resolveBrandSlug(brandName || "Marine Brand", brands) || "west-marine";
 
   const categoryHint = [
@@ -303,14 +318,14 @@ function mapItemToProduct(item, brands, categories) {
     sku,
     shortDescription: seo.shortDescription,
     longDescription: seo.longDescription,
-    highlights: highlights.length ? highlights : ["Engineered for marine environments", "Specs and fit guidance verified before publishing"],
-    pros: [
-      "Category-appropriate fitment guidance included",
-      "SEO-enhanced product data and clean metadata",
-      "Live merchant destination for current availability",
-    ],
-    cons: ["Final pricing and shipping are set on merchant destination pages"],
-    specs,
+    highlights: highlights.length ? highlights : [`Built for dependable ${category.name.toLowerCase()} performance`, "Practical fit and setup details included", "Quick comparison format for faster buying decisions"],
+    pros: ["Clear core specs and model details", "Useful fit and compatibility guidance", "Fast comparison before partner checkout"],
+    cons: ["Final stock and shipping terms are confirmed on seller page"],
+    specs: [
+      ...specs,
+      { label: "Brand", value: brandName || "Partner brand" },
+      { label: "SKU", value: sku },
+    ].slice(0, 10),
     compatibility: [`Best matched for ${category.name} use cases`, "Verify dimensions and model compatibility before purchase"],
     images: [imageUrl],
     partnerLinks: [
@@ -318,7 +333,7 @@ function mapItemToProduct(item, brands, categories) {
         label: "View Details",
         url,
         network: "Impact",
-        merchant: brandName || "Partner Merchant",
+        merchant: merchantName || brandName || "Partner Merchant",
         lastChecked: new Date().toISOString().slice(0, 10),
         availabilityNote: "Availability may change on partner site.",
         rel: "sponsored nofollow",

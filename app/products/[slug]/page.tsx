@@ -42,10 +42,14 @@ export default async function ProductPage({ params }: { params: ProductParams | 
   const relatedProducts = getRelatedProducts(product.relatedProductSlugs);
   const relatedGuides = articles.filter((item) => product.relatedGuideSlugs.includes(item.slug));
   const gallery = product.images.length > 0 ? product.images : ["/images/products/placeholder-product-1.svg"];
+  const visibleSpecs = product.specs.filter((spec) => !/source/i.test(spec.label));
+  const visibleHighlights = product.highlights.filter((item) => !/seo|source/i.test(item));
+  const visiblePros = product.pros.filter((item) => !/seo|metadata/i.test(item));
+  const visibleCons = product.cons.filter((item) => !/merchant destination/i.test(item));
 
   const faqItems = [
     { question: "How current is pricing?", answer: "Pricing and availability can change quickly. Use outbound links for live details before checkout." },
-    { question: "Does Sea Supply Hub sell products directly?", answer: "Sea Supply Hub focuses on product research and routes shoppers to trusted merchant pages for checkout." },
+    { question: "Does Sea Supply Hub sell products directly?", answer: "Sea Supply Hub helps you compare marine gear and complete purchase securely with trusted retail partners." },
   ];
 
   return (
@@ -67,12 +71,12 @@ export default async function ProductPage({ params }: { params: ProductParams | 
           </div>
           <h1 className="text-3xl font-semibold text-slate-900">{product.name}</h1>
           <p className="text-slate-700">{product.longDescription}</p>
-          <div><h2 className="text-lg font-semibold text-slate-900">Highlights</h2><ul className="mt-2 list-disc space-y-1 pl-5 text-slate-700">{product.highlights.map((item) => <li key={item}>{item}</li>)}</ul></div>
+          <div><h2 className="text-lg font-semibold text-slate-900">Key Highlights</h2><ul className="mt-2 list-disc space-y-1 pl-5 text-slate-700">{(visibleHighlights.length ? visibleHighlights : product.highlights).map((item) => <li key={item}>{item}</li>)}</ul></div>
         </div>
 
         <aside className="space-y-4 rounded-2xl border border-slate-200 bg-white p-6">
           <p className="text-sm font-semibold uppercase tracking-wide text-sky-700">Buy Options</p>
-          <p className="text-sm text-slate-700">Checkout is completed on merchant sites. Availability may vary.</p>
+          <p className="text-sm text-slate-700">Compare details here, then open the seller page for live stock and final price.</p>
           {product.partnerLinks.map((partner) => (
             <div key={partner.url} className="space-y-2 rounded-lg border border-slate-200 p-3">
               <OutboundButton href={partner.url} label={partner.label} />
@@ -83,13 +87,13 @@ export default async function ProductPage({ params }: { params: ProductParams | 
       </section>
 
       <section className="grid gap-6 lg:grid-cols-2">
-        <div className="rounded-2xl border border-slate-200 bg-white p-6"><h2 className="text-xl font-semibold text-slate-900">Specifications</h2><table className="mt-3 w-full text-sm"><tbody>{product.specs.map((spec) => <tr key={spec.label} className="border-t border-slate-200 first:border-t-0"><th className="py-2 pr-3 text-left font-medium text-slate-700">{spec.label}</th><td className="py-2 text-slate-900">{spec.value}</td></tr>)}</tbody></table></div>
-        <div className="rounded-2xl border border-slate-200 bg-white p-6"><h2 className="text-xl font-semibold text-slate-900">Compatibility & Guidance</h2><ul className="mt-3 list-disc space-y-1 pl-5 text-slate-700">{product.compatibility.map((item) => <li key={item}>{item}</li>)}</ul><h3 className="mt-5 text-lg font-semibold text-slate-900">Pros</h3><ul className="mt-2 list-disc space-y-1 pl-5 text-slate-700">{product.pros.map((item) => <li key={item}>{item}</li>)}</ul><h3 className="mt-4 text-lg font-semibold text-slate-900">Cons</h3><ul className="mt-2 list-disc space-y-1 pl-5 text-slate-700">{product.cons.map((item) => <li key={item}>{item}</li>)}</ul></div>
+        <div className="rounded-2xl border border-slate-200 bg-white p-6"><h2 className="text-xl font-semibold text-slate-900">Specifications</h2><table className="mt-3 w-full text-sm"><tbody>{(visibleSpecs.length ? visibleSpecs : product.specs).map((spec) => <tr key={spec.label} className="border-t border-slate-200 first:border-t-0"><th className="py-2 pr-3 text-left font-medium text-slate-700">{spec.label}</th><td className="py-2 text-slate-900">{spec.value}</td></tr>)}</tbody></table></div>
+        <div className="rounded-2xl border border-slate-200 bg-white p-6"><h2 className="text-xl font-semibold text-slate-900">Compatibility & Guidance</h2><ul className="mt-3 list-disc space-y-1 pl-5 text-slate-700">{product.compatibility.map((item) => <li key={item}>{item}</li>)}</ul><h3 className="mt-5 text-lg font-semibold text-slate-900">Pros</h3><ul className="mt-2 list-disc space-y-1 pl-5 text-slate-700">{(visiblePros.length ? visiblePros : product.pros).map((item) => <li key={item}>{item}</li>)}</ul><h3 className="mt-4 text-lg font-semibold text-slate-900">Considerations</h3><ul className="mt-2 list-disc space-y-1 pl-5 text-slate-700">{(visibleCons.length ? visibleCons : product.cons).map((item) => <li key={item}>{item}</li>)}</ul></div>
       </section>
 
       <section className="grid gap-6 lg:grid-cols-2">
-        <div className="rounded-2xl border border-slate-200 bg-white p-6"><h2 className="text-xl font-semibold text-slate-900">Shipping & Availability Info</h2><p className="mt-2 text-sm text-slate-700">Orders are completed on merchant sites. Shipping speed, returns, and inventory depend on the selected merchant. Always confirm delivery options before checkout.</p></div>
-        <div className="rounded-2xl border border-slate-200 bg-white p-6"><h2 className="text-xl font-semibold text-slate-900">Brand Profile</h2>{brand ? <div className="mt-2 space-y-2 text-sm text-slate-700">{brand.logoUrl ? <Image src={brand.logoUrl} alt={`${brand.name} logo`} width={160} height={60} className="h-12 w-auto object-contain" /> : null}<p className="font-semibold text-slate-900">{brand.name}</p><p>{brand.description}</p><Link href={`/brands/${brand.slug}`} className="font-semibold text-sky-700 hover:underline">Explore all {brand.name} products</Link></div> : <p className="mt-2 text-sm text-slate-700">Brand profile is being expanded.</p>}</div>
+        <div className="rounded-2xl border border-slate-200 bg-white p-6"><h2 className="text-xl font-semibold text-slate-900">Shipping & Availability</h2><p className="mt-2 text-sm text-slate-700">Shipping options, return terms, and delivery windows are shown on the seller page before checkout.</p></div>
+        <div className="rounded-2xl border border-slate-200 bg-white p-6"><h2 className="text-xl font-semibold text-slate-900">Brand Profile</h2>{brand ? <div className="mt-2 space-y-2 text-sm text-slate-700">{brand.logoUrl ? <Image src={brand.logoUrl} alt={`${brand.name} logo`} width={160} height={60} className="h-12 w-auto object-contain" /> : null}<p className="font-semibold text-slate-900">{brand.name}</p><p>{/imported brand profile/i.test(brand.description) ? `${brand.name} is a recognized supplier in this product segment.` : brand.description}</p><Link href={`/brands/${brand.slug}`} className="font-semibold text-sky-700 hover:underline">Explore all {brand.name} products</Link></div> : <p className="mt-2 text-sm text-slate-700">Brand profile is being expanded.</p>}</div>
       </section>
 
       <section className="rounded-2xl border border-slate-200 bg-white p-6"><h2 className="text-xl font-semibold text-slate-900">Related Buying Guides</h2><ul className="mt-3 space-y-2 text-sm text-slate-700">{relatedGuides.map((guide) => <li key={guide.slug}><Link href={guide.type === "buying-guide" ? `/resources/buying-guides/${guide.slug}` : guide.type === "comparison" ? `/resources/comparisons/${guide.slug}` : `/resources/blog/${guide.slug}`} className="text-sky-700 hover:underline">{guide.title}</Link></li>)}</ul></section>
