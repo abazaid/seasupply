@@ -26,8 +26,8 @@ export async function generateMetadata({ params }: { params: ProductParams | Pro
   if (!product) return buildMetadata({ title: "Product Not Found", description: "Product not found.", path: "/categories" });
 
   return buildMetadata({
-    title: `${product.name} | Specs, Reviews & Price`,
-    description: product.shortDescription,
+    title: product.seoTitle ?? `${product.name} | Specs, Reviews & Price`,
+    description: product.seoDescription ?? product.shortDescription,
     path: `/products/${product.slug}`,
     keywords: [product.name, product.sku, "marine product", "boat gear", "price check"],
   });

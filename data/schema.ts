@@ -51,6 +51,8 @@ export const productSchema = z.object({
   id: z.string(),
   slug: z.string(),
   name: z.string(),
+  seoTitle: z.string().optional(),
+  seoDescription: z.string().optional(),
   brandSlug: z.string(),
   categorySlug: z.string(),
   subcategorySlug: z.string(),

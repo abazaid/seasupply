@@ -1,1256 +1,267 @@
 [
-    {
-        "id":  "P-1001",
-        "slug":  "garmin-echomap-ultra-2",
-        "name":  "Garmin ECHOMAP Ultra 2 12\" Chartplotter",
-        "brandSlug":  "garmin",
-        "categorySlug":  "electronics-navigation",
-        "subcategorySlug":  "chartplotters",
-        "sku":  "GAR-EU2-12",
-        "shortDescription":  "Premium network-ready chartplotter.",
-        "longDescription":  "High-brightness multifunction display for coastal and offshore navigation workflows.",
-        "highlights":  [
-                           "12-inch display",
-                           "NMEA 2000",
-                           "Ethernet"
-                       ],
-        "pros":  [
-                     "Fast",
-                     "Bright"
-                 ],
-        "cons":  [
-                     "Premium price"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Display",
-                          "value":  "12 in"
-                      },
-                      {
-                          "label":  "Rating",
-                          "value":  "IPX7"
-                      }
-                  ],
-        "compatibility":  [
-                              "Center consoles 24ft+"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-1.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "Check Price",
-                                 "url":  "https://partner.example.com/garmin-echomap-ultra-2",
-                                 "network":  "Impact",
-                                 "merchant":  "Marine Partner A",
-                                 "lastChecked":  "2026-03-28",
-                                 "availabilityNote":  "Availability may vary.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "raymarine-element-9-hv"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "how-to-choose-a-marine-gps"
-                              ],
-        "featured":  true,
-        "bestSeller":  true
-    },
-    {
-        "id":  "P-1002",
-        "slug":  "raymarine-element-9-hv",
-        "name":  "Raymarine Element 9 HV",
-        "brandSlug":  "raymarine",
-        "categorySlug":  "electronics-navigation",
-        "subcategorySlug":  "fishfinders",
-        "sku":  "RAY-E9HV",
-        "shortDescription":  "Fishfinder and GPS combo.",
-        "longDescription":  "Clear sonar imaging with practical GPS charting for inshore and nearshore use.",
-        "highlights":  [
-                           "CHIRP sonar",
-                           "GPS"
-                       ],
-        "pros":  [
-                     "Great value"
-                 ],
-        "cons":  [
-                     "Smaller screen"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Display",
-                          "value":  "9 in"
-                      }
-                  ],
-        "compatibility":  [
-                              "Bay boats"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-2.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "View on Partner Site",
-                                 "url":  "https://partner.example.com/raymarine-element-9-hv",
-                                 "network":  "CJ",
-                                 "merchant":  "Marine Partner B",
-                                 "lastChecked":  "2026-03-25",
-                                 "availabilityNote":  "Bundles vary.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "garmin-echomap-ultra-2"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "marine-fishfinder-vs-chartplotter"
-                              ],
-        "featured":  true,
-        "bestSeller":  false
-    },
-    {
-        "id":  "P-1003",
-        "slug":  "simrad-nss-4-10",
-        "name":  "Simrad NSS 4 10\" MFD",
-        "brandSlug":  "simrad",
-        "categorySlug":  "electronics-navigation",
-        "subcategorySlug":  "chartplotters",
-        "sku":  "SIM-NSS4-10",
-        "shortDescription":  "Advanced multifunction display.",
-        "longDescription":  "Compact premium display with strong helm customization and networking.",
-        "highlights":  [
-                           "10-inch HD",
-                           "NMEA 2000"
-                       ],
-        "pros":  [
-                     "Flexible layout"
-                 ],
-        "cons":  [
-                     "Learning curve"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Display",
-                          "value":  "10 in"
-                      }
-                  ],
-        "compatibility":  [
-                              "Fishing boats"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-3.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "Buy from Partner",
-                                 "url":  "https://partner.example.com/simrad-nss-4-10",
-                                 "network":  "Impact",
-                                 "merchant":  "Marine Partner C",
-                                 "lastChecked":  "2026-03-30",
-                                 "availabilityNote":  "Lead times vary.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "garmin-echomap-ultra-2"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "how-to-choose-a-marine-gps"
-                              ],
-        "featured":  true,
-        "bestSeller":  false
-    },
-    {
-        "id":  "P-1004",
-        "slug":  "shakespeare-8ft-vhf-antenna",
-        "name":  "Shakespeare 8ft VHF Antenna",
-        "brandSlug":  "shakespeare",
-        "categorySlug":  "electronics-navigation",
-        "subcategorySlug":  "vhf-radio",
-        "sku":  "SHA-VHF-8",
-        "shortDescription":  "Durable VHF antenna.",
-        "longDescription":  "Reliable marine antenna for improved communication performance.",
-        "highlights":  [
-                           "8ft fiberglass",
-                           "PL-259"
-                       ],
-        "pros":  [
-                     "Reliable"
-                 ],
-        "cons":  [
-                     "Needs mounting clearance"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Length",
-                          "value":  "8 ft"
-                      }
-                  ],
-        "compatibility":  [
-                              "Power and sail boats"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-4.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "Check Price",
-                                 "url":  "https://partner.example.com/shakespeare-8ft-vhf-antenna",
-                                 "network":  "Impact",
-                                 "merchant":  "Marine Partner A",
-                                 "lastChecked":  "2026-03-24",
-                                 "availabilityNote":  "Mount sold separately.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "garmin-echomap-ultra-2"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "marine-electrical-system-basics"
-                              ],
-        "featured":  false,
-        "bestSeller":  false
-    },
-    {
-        "id":  "P-1005",
-        "slug":  "lewmar-delta-anchor-22lb",
-        "name":  "Lewmar Delta Anchor 22 lb",
-        "brandSlug":  "lewmar",
-        "categorySlug":  "anchor-docking",
-        "subcategorySlug":  "anchors",
-        "sku":  "LEW-DELTA-22",
-        "shortDescription":  "Plow-style anchor for mixed bottoms.",
-        "longDescription":  "Trusted holding performance for coastal and cruising anchoring setups.",
-        "highlights":  [
-                           "Galvanized steel",
-                           "Self-launching"
-                       ],
-        "pros":  [
-                     "Strong hold"
-                 ],
-        "cons":  [
-                     "Sizing matters"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Weight",
-                          "value":  "22 lb"
-                      }
-                  ],
-        "compatibility":  [
-                              "Boats 28-36 ft"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-5.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "View on Partner Site",
-                                 "url":  "https://partner.example.com/lewmar-delta-anchor-22lb",
-                                 "network":  "Impact",
-                                 "merchant":  "Marine Partner A",
-                                 "lastChecked":  "2026-03-22",
-                                 "availabilityNote":  "Confirm rode size.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "lewmar-pro-series-windlass-1000w"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "anchor-sizing-for-coastal-boats"
-                              ],
-        "featured":  true,
-        "bestSeller":  true
-    },
-    {
-        "id":  "P-1006",
-        "slug":  "lewmar-pro-series-windlass-1000w",
-        "name":  "Lewmar Pro-Series Windlass 1000W",
-        "brandSlug":  "lewmar",
-        "categorySlug":  "anchor-docking",
-        "subcategorySlug":  "windlasses",
-        "sku":  "LEW-PRO-1000",
-        "shortDescription":  "Electric anchor windlass.",
-        "longDescription":  "Compact electric windlass for easier deployment and retrieval cycles.",
-        "highlights":  [
-                           "1000W motor",
-                           "12V"
-                       ],
-        "pros":  [
-                     "Saves effort"
-                 ],
-        "cons":  [
-                     "Requires dedicated circuit"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Power",
-                          "value":  "1000W"
-                      }
-                  ],
-        "compatibility":  [
-                              "Boats 30-40 ft"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-6.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "Check Price",
-                                 "url":  "https://partner.example.com/lewmar-pro-series-windlass-1000w",
-                                 "network":  "CJ",
-                                 "merchant":  "Marine Partner B",
-                                 "lastChecked":  "2026-03-26",
-                                 "availabilityNote":  "Kit may be separate.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "lewmar-delta-anchor-22lb"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "anchor-sizing-for-coastal-boats"
-                              ],
-        "featured":  false,
-        "bestSeller":  false
-    },
-    {
-        "id":  "P-1007",
-        "slug":  "mustang-elite-inflatable-pfd",
-        "name":  "Mustang Elite Inflatable PFD",
-        "brandSlug":  "mustang-survival",
-        "categorySlug":  "safety",
-        "subcategorySlug":  "life-jackets",
-        "sku":  "MUS-ELITE-PFD",
-        "shortDescription":  "Low-profile inflatable life jacket.",
-        "longDescription":  "Comfort-first PFD built for all-day wear during offshore and coastal runs.",
-        "highlights":  [
-                           "Auto/manual inflation",
-                           "Type V"
-                       ],
-        "pros":  [
-                     "Comfortable"
-                 ],
-        "cons":  [
-                     "Cartridge maintenance"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Buoyancy",
-                          "value":  "38 lb"
-                      }
-                  ],
-        "compatibility":  [
-                              "Offshore use"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-7.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "Buy from Partner",
-                                 "url":  "https://partner.example.com/mustang-elite-inflatable-pfd",
-                                 "network":  "Impact",
-                                 "merchant":  "Marine Partner D",
-                                 "lastChecked":  "2026-03-20",
-                                 "availabilityNote":  "Verify size chart.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "garmin-inreach-mini-marine-bundle"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "essential-marine-safety-gear-for-families"
-                              ],
-        "featured":  true,
-        "bestSeller":  true
-    },
-    {
-        "id":  "P-1008",
-        "slug":  "garmin-inreach-mini-marine-bundle",
-        "name":  "Garmin inReach Mini Marine Bundle",
-        "brandSlug":  "garmin",
-        "categorySlug":  "safety",
-        "subcategorySlug":  "epirb-plb",
-        "sku":  "GAR-INREACH-M",
-        "shortDescription":  "Compact satellite communicator.",
-        "longDescription":  "Emergency communication device for offshore trips with limited cellular coverage.",
-        "highlights":  [
-                           "Satellite messaging",
-                           "IPX7"
-                       ],
-        "pros":  [
-                     "Safety value"
-                 ],
-        "cons":  [
-                     "Subscription needed"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Battery",
-                          "value":  "Rechargeable"
-                      }
-                  ],
-        "compatibility":  [
-                              "Offshore passages"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-8.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "Check Price",
-                                 "url":  "https://partner.example.com/garmin-inreach-mini-marine-bundle",
-                                 "network":  "CJ",
-                                 "merchant":  "Marine Partner B",
-                                 "lastChecked":  "2026-03-19",
-                                 "availabilityNote":  "Plans vary by provider.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "mustang-elite-inflatable-pfd"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "essential-marine-safety-gear-for-families"
-                              ],
-        "featured":  false,
-        "bestSeller":  false
-    },
-    {
-        "id":  "P-1009",
-        "slug":  "blue-sea-12-circuit-panel",
-        "name":  "Blue Sea 12-Circuit Breaker Panel",
-        "brandSlug":  "blue-sea-systems",
-        "categorySlug":  "marine-electrical",
-        "subcategorySlug":  "switches-breakers",
-        "sku":  "BSS-12PANEL",
-        "shortDescription":  "DC breaker panel for clean distribution.",
-        "longDescription":  "Organized circuit protection for marine electrical upgrades and refits.",
-        "highlights":  [
-                           "12 circuits",
-                           "Marine-grade"
-                       ],
-        "pros":  [
-                     "Organized wiring"
-                 ],
-        "cons":  [
-                     "Needs planned layout"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Circuits",
-                          "value":  "12"
-                      }
-                  ],
-        "compatibility":  [
-                              "12V and 24V systems"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-9.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "View on Partner Site",
-                                 "url":  "https://partner.example.com/blue-sea-12-circuit-panel",
-                                 "network":  "Impact",
-                                 "merchant":  "Marine Partner A",
-                                 "lastChecked":  "2026-03-21",
-                                 "availabilityNote":  "Confirm cutout size.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "victron-smart-battery-monitor"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "marine-electrical-system-basics"
-                              ],
-        "featured":  true,
-        "bestSeller":  false
-    },
-    {
-        "id":  "P-1010",
-        "slug":  "victron-smart-battery-monitor",
-        "name":  "Victron Smart Battery Monitor",
-        "brandSlug":  "victron",
-        "categorySlug":  "marine-electrical",
-        "subcategorySlug":  "batteries",
-        "sku":  "VIC-SMART-BMV",
-        "shortDescription":  "Battery health and usage monitor.",
-        "longDescription":  "Tracks charge state and consumption trends for improved electrical confidence onboard.",
-        "highlights":  [
-                           "Bluetooth",
-                           "SOC tracking"
-                       ],
-        "pros":  [
-                     "Accurate insight"
-                 ],
-        "cons":  [
-                     "Shunt install needed"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "System",
-                          "value":  "12V/24V"
-                      }
-                  ],
-        "compatibility":  [
-                              "AGM and LiFePO4"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-10.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "Check Price",
-                                 "url":  "https://partner.example.com/victron-smart-battery-monitor",
-                                 "network":  "Impact",
-                                 "merchant":  "Marine Partner E",
-                                 "lastChecked":  "2026-03-29",
-                                 "availabilityNote":  "Pro install recommended for complex systems.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "blue-sea-12-circuit-panel"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "marine-electrical-system-basics"
-                              ],
-        "featured":  false,
-        "bestSeller":  true
-    },
-    {
-        "id":  "P-1011",
-        "slug":  "attwood-marine-deck-cleaner-32oz",
-        "name":  "Attwood Marine Deck Cleaner 32oz",
-        "brandSlug":  "attwood",
-        "categorySlug":  "boat-maintenance",
-        "subcategorySlug":  "cleaners",
-        "sku":  "ATT-DECK-32",
-        "shortDescription":  "Marine-safe non-skid deck cleaner.",
-        "longDescription":  "Biodegradable cleaner for removing salt and grime from deck surfaces.",
-        "highlights":  [
-                           "32 oz",
-                           "Biodegradable"
-                       ],
-        "pros":  [
-                     "Easy use"
-                 ],
-        "cons":  [
-                     "May require repeat on heavy stains"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Volume",
-                          "value":  "32 oz"
-                      }
-                  ],
-        "compatibility":  [
-                              "Fiberglass decks"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-11.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "Buy from Partner",
-                                 "url":  "https://partner.example.com/attwood-marine-deck-cleaner-32oz",
-                                 "network":  "CJ",
-                                 "merchant":  "Marine Partner C",
-                                 "lastChecked":  "2026-03-18",
-                                 "availabilityNote":  "Spot test recommended.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "attwood-boat-wax-protection-kit"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "spring-boat-maintenance-checklist"
-                              ],
-        "featured":  false,
-        "bestSeller":  false
-    },
-    {
-        "id":  "P-1012",
-        "slug":  "attwood-boat-wax-protection-kit",
-        "name":  "Attwood Boat Wax Protection Kit",
-        "brandSlug":  "attwood",
-        "categorySlug":  "boat-maintenance",
-        "subcategorySlug":  "wax-polish",
-        "sku":  "ATT-WAX-KIT",
-        "shortDescription":  "Restore gloss and UV protection.",
-        "longDescription":  "Seasonal two-step compound and wax maintenance kit for gelcoat hulls.",
-        "highlights":  [
-                           "Compound + wax",
-                           "UV layer"
-                       ],
-        "pros":  [
-                     "Great shine"
-                 ],
-        "cons":  [
-                     "Surface prep required"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Surface",
-                          "value":  "Gelcoat"
-                      }
-                  ],
-        "compatibility":  [
-                              "Fiberglass hulls"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-12.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "Check Price",
-                                 "url":  "https://partner.example.com/attwood-boat-wax-protection-kit",
-                                 "network":  "Impact",
-                                 "merchant":  "Marine Partner D",
-                                 "lastChecked":  "2026-03-20",
-                                 "availabilityNote":  "Pads sold separately.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "attwood-marine-deck-cleaner-32oz"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "spring-boat-maintenance-checklist"
-                              ],
-        "featured":  false,
-        "bestSeller":  false
-    },
-    {
-        "id":  "P-1013",
-        "slug":  "yamaha-outboard-service-kit-f150",
-        "name":  "Yamaha Outboard Service Kit F150",
-        "brandSlug":  "yamaha",
-        "categorySlug":  "engine-systems",
-        "subcategorySlug":  "filtration",
-        "sku":  "YAM-F150-SVC",
-        "shortDescription":  "Routine service essentials for F150.",
-        "longDescription":  "Model-targeted maintenance kit to streamline seasonal outboard upkeep.",
-        "highlights":  [
-                           "Model-specific",
-                           "Bundled essentials"
-                       ],
-        "pros":  [
-                     "Convenient"
-                 ],
-        "cons":  [
-                     "Limited fitment"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Fitment",
-                          "value":  "Yamaha F150"
-                      }
-                  ],
-        "compatibility":  [
-                              "F150 outboards"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-13.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "View on Partner Site",
-                                 "url":  "https://partner.example.com/yamaha-outboard-service-kit-f150",
-                                 "network":  "Impact",
-                                 "merchant":  "Marine Partner A",
-                                 "lastChecked":  "2026-03-23",
-                                 "availabilityNote":  "Confirm model year.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "yamaha-fuel-water-separator-kit"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "outboard-fuel-system-troubleshooting"
-                              ],
-        "featured":  true,
-        "bestSeller":  false
-    },
-    {
-        "id":  "P-1014",
-        "slug":  "yamaha-fuel-water-separator-kit",
-        "name":  "Yamaha Fuel/Water Separator Kit",
-        "brandSlug":  "yamaha",
-        "categorySlug":  "engine-systems",
-        "subcategorySlug":  "fuel-systems",
-        "sku":  "YAM-FWS-KIT",
-        "shortDescription":  "Fuel contamination protection kit.",
-        "longDescription":  "Helps keep water and debris out of fuel flow to protect engine reliability.",
-        "highlights":  [
-                           "Marine-grade housing",
-                           "Service-friendly"
-                       ],
-        "pros":  [
-                     "Preventive value"
-                 ],
-        "cons":  [
-                     "Filter replacement needed"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Type",
-                          "value":  "Fuel/Water Separator"
-                      }
-                  ],
-        "compatibility":  [
-                              "Most outboard systems"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-14.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "Buy from Partner",
-                                 "url":  "https://partner.example.com/yamaha-fuel-water-separator-kit",
-                                 "network":  "CJ",
-                                 "merchant":  "Marine Partner C",
-                                 "lastChecked":  "2026-03-22",
-                                 "availabilityNote":  "Confirm hose size.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "yamaha-outboard-service-kit-f150"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "outboard-fuel-system-troubleshooting"
-                              ],
-        "featured":  false,
-        "bestSeller":  true
-    },
-    {
-        "id":  "P-1015",
-        "slug":  "minn-kota-terrova-80-ipilot",
-        "name":  "Minn Kota Terrova 80 i-Pilot",
-        "brandSlug":  "minn-kota",
-        "categorySlug":  "boats-motors",
-        "subcategorySlug":  "trolling-motors",
-        "sku":  "MKO-TER80-IP",
-        "shortDescription":  "GPS-enabled trolling motor.",
-        "longDescription":  "Quiet high-thrust bow motor with advanced position control for serious anglers.",
-        "highlights":  [
-                           "80 lb thrust",
-                           "i-Pilot"
-                       ],
-        "pros":  [
-                     "Excellent control"
-                 ],
-        "cons":  [
-                     "High current draw"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Voltage",
-                          "value":  "24V"
-                      }
-                  ],
-        "compatibility":  [
-                              "Bass and bay boats"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-15.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "Check Price",
-                                 "url":  "https://partner.example.com/minn-kota-terrova-80-ipilot",
-                                 "network":  "Impact",
-                                 "merchant":  "Marine Partner E",
-                                 "lastChecked":  "2026-03-27",
-                                 "availabilityNote":  "Battery bank required.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "victron-smart-battery-monitor"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "best-trolling-motor-for-inshore-fishing"
-                              ],
-        "featured":  true,
-        "bestSeller":  true
-    },
-    {
-        "id":  "P-1016",
-        "slug":  "yamaha-rigging-control-box",
-        "name":  "Yamaha Outboard Rigging Control Box",
-        "brandSlug":  "yamaha",
-        "categorySlug":  "boats-motors",
-        "subcategorySlug":  "motor-rigging",
-        "sku":  "YAM-RIG-CB",
-        "shortDescription":  "Outboard mechanical control box.",
-        "longDescription":  "Reliable throttle and shift control solution for single-station outboard rigs.",
-        "highlights":  [
-                           "Mechanical control",
-                           "Corrosion-resistant"
-                       ],
-        "pros":  [
-                     "Smooth control feel"
-                 ],
-        "cons":  [
-                     "Cable selection required"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Mount",
-                          "value":  "Side mount"
-                      }
-                  ],
-        "compatibility":  [
-                              "Yamaha mechanical systems"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-16.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "Buy from Partner",
-                                 "url":  "https://partner.example.com/yamaha-rigging-control-box",
-                                 "network":  "Impact",
-                                 "merchant":  "Marine Partner B",
-                                 "lastChecked":  "2026-03-24",
-                                 "availabilityNote":  "Cables sold separately.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "yamaha-outboard-service-kit-f150"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "outboard-fuel-system-troubleshooting"
-                              ],
-        "featured":  false,
-        "bestSeller":  false
-    },
-    {
-        "id":  "P-1017",
-        "slug":  "shurflo-pro-washdown-pump-kit",
-        "name":  "SHURFLO Pro Washdown Pump Kit",
-        "brandSlug":  "shurflo",
-        "categorySlug":  "pumps",
-        "subcategorySlug":  "washdown-pumps",
-        "sku":  "SHU-PRO-WD",
-        "shortDescription":  "High-pressure washdown kit.",
-        "longDescription":  "Complete washdown package for cockpit and deck cleanup with strong output.",
-        "highlights":  [
-                           "4.0 GPM",
-                           "55 PSI"
-                       ],
-        "pros":  [
-                     "Strong pressure"
-                 ],
-        "cons":  [
-                     "Can be noisy"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Voltage",
-                          "value":  "12V"
-                      }
-                  ],
-        "compatibility":  [
-                              "Deck washdown systems"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-17.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "Check Price",
-                                 "url":  "https://partner.example.com/shurflo-pro-washdown-pump-kit",
-                                 "network":  "CJ",
-                                 "merchant":  "Marine Partner C",
-                                 "lastChecked":  "2026-03-29",
-                                 "availabilityNote":  "Use strainer for pump longevity.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "attwood-automatic-bilge-pump-1100"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "marine-pump-sizing-guide"
-                              ],
-        "featured":  true,
-        "bestSeller":  true
-    },
-    {
-        "id":  "P-1018",
-        "slug":  "attwood-automatic-bilge-pump-1100",
-        "name":  "Attwood Automatic Bilge Pump 1100 GPH",
-        "brandSlug":  "attwood",
-        "categorySlug":  "pumps",
-        "subcategorySlug":  "bilge-pumps",
-        "sku":  "ATT-BILGE-1100",
-        "shortDescription":  "Automatic 1100 GPH bilge pump.",
-        "longDescription":  "Reliable everyday bilge water removal with integrated automatic switching.",
-        "highlights":  [
-                           "1100 GPH",
-                           "Integrated switch"
-                       ],
-        "pros":  [
-                     "Simple install"
-                 ],
-        "cons":  [
-                     "Not emergency high-capacity"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Voltage",
-                          "value":  "12V"
-                      }
-                  ],
-        "compatibility":  [
-                              "Runabouts and center consoles"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-18.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "View on Partner Site",
-                                 "url":  "https://partner.example.com/attwood-automatic-bilge-pump-1100",
-                                 "network":  "Impact",
-                                 "merchant":  "Marine Partner D",
-                                 "lastChecked":  "2026-03-25",
-                                 "availabilityNote":  "Use proper fuse sizing.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "shurflo-pro-washdown-pump-kit"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "marine-pump-sizing-guide"
-                              ],
-        "featured":  false,
-        "bestSeller":  true
-    },
-    {
-        "id":  "P-1019",
-        "slug":  "shurflo-aqua-king-freshwater-pump",
-        "name":  "SHURFLO Aqua King Freshwater Pump",
-        "brandSlug":  "shurflo",
-        "categorySlug":  "plumbing",
-        "subcategorySlug":  "water-systems",
-        "sku":  "SHU-AQUA-K",
-        "shortDescription":  "On-demand freshwater pressure pump.",
-        "longDescription":  "Smooth pressure delivery for galley and cabin water fixtures.",
-        "highlights":  [
-                           "3.0 GPM",
-                           "Thermal protection"
-                       ],
-        "pros":  [
-                     "Stable flow"
-                 ],
-        "cons":  [
-                     "Needs strainer"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Pressure",
-                          "value":  "55 PSI"
-                      }
-                  ],
-        "compatibility":  [
-                              "Freshwater systems"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-19.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "Buy from Partner",
-                                 "url":  "https://partner.example.com/shurflo-aqua-king-freshwater-pump",
-                                 "network":  "CJ",
-                                 "merchant":  "Marine Partner E",
-                                 "lastChecked":  "2026-03-26",
-                                 "availabilityNote":  "Match hose diameter.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "shurflo-pro-washdown-pump-kit"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "marine-pump-sizing-guide"
-                              ],
-        "featured":  false,
-        "bestSeller":  false
-    },
-    {
-        "id":  "P-1020",
-        "slug":  "blue-sea-bilge-switch-pro",
-        "name":  "Blue Sea Bilge Switch Pro",
-        "brandSlug":  "blue-sea-systems",
-        "categorySlug":  "pumps",
-        "subcategorySlug":  "pump-switches",
-        "sku":  "BSS-BSW-PRO",
-        "shortDescription":  "Electronic automatic bilge switch.",
-        "longDescription":  "Electronic sensing switch that minimizes moving-part wear in wet bilge environments.",
-        "highlights":  [
-                           "Electronic sensing",
-                           "Low current draw"
-                       ],
-        "pros":  [
-                     "Reliable automation"
-                 ],
-        "cons":  [
-                     "Requires clean wiring"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "System",
-                          "value":  "12V/24V"
-                      }
-                  ],
-        "compatibility":  [
-                              "Most bilge pumps"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-20.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "Check Price",
-                                 "url":  "https://partner.example.com/blue-sea-bilge-switch-pro",
-                                 "network":  "Impact",
-                                 "merchant":  "Marine Partner A",
-                                 "lastChecked":  "2026-03-29",
-                                 "availabilityNote":  "Confirm amp compatibility.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "attwood-automatic-bilge-pump-1100"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "marine-pump-sizing-guide"
-                              ],
-        "featured":  false,
-        "bestSeller":  false
-    },
-    {
-        "id":  "P-1021",
-        "slug":  "lewmar-ocean-46-self-tailing-winch",
-        "name":  "Lewmar Ocean 46 Self-Tailing Winch",
-        "brandSlug":  "lewmar",
-        "categorySlug":  "sailing",
-        "subcategorySlug":  "winches",
-        "sku":  "LEW-O46-ST",
-        "shortDescription":  "Self-tailing cruising sail winch.",
-        "longDescription":  "Reliable deck winch for improved line control and cockpit efficiency.",
-        "highlights":  [
-                           "Self-tailing",
-                           "Corrosion-resistant"
-                       ],
-        "pros":  [
-                     "Strong control"
-                 ],
-        "cons":  [
-                     "Premium cost"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Size",
-                          "value":  "46"
-                      }
-                  ],
-        "compatibility":  [
-                              "Cruising sailboats"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-21.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "View on Partner Site",
-                                 "url":  "https://partner.example.com/lewmar-ocean-46-self-tailing-winch",
-                                 "network":  "Impact",
-                                 "merchant":  "Marine Partner B",
-                                 "lastChecked":  "2026-03-30",
-                                 "availabilityNote":  "Check deck bolt pattern.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "shakespeare-8ft-vhf-antenna"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "anchor-sizing-for-coastal-boats"
-                              ],
-        "featured":  false,
-        "bestSeller":  false
-    },
-    {
-        "id":  "P-1022",
-        "slug":  "mustang-impact-vest-pro",
-        "name":  "Mustang Impact Vest Pro",
-        "brandSlug":  "mustang-survival",
-        "categorySlug":  "watersports",
-        "subcategorySlug":  "impact-vests",
-        "sku":  "MUS-IMP-PRO",
-        "shortDescription":  "Mobility-focused impact vest.",
-        "longDescription":  "Flexible impact vest built for active tow sports and quick-dry comfort.",
-        "highlights":  [
-                           "Athletic fit",
-                           "Quick-dry"
-                       ],
-        "pros":  [
-                     "Great movement"
-                 ],
-        "cons":  [
-                     "Not all-use PFD replacement"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Use",
-                          "value":  "Tow sports"
-                      }
-                  ],
-        "compatibility":  [
-                              "Recreational watersports"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-22.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "Buy from Partner",
-                                 "url":  "https://partner.example.com/mustang-impact-vest-pro",
-                                 "network":  "CJ",
-                                 "merchant":  "Marine Partner D",
-                                 "lastChecked":  "2026-03-23",
-                                 "availabilityNote":  "Use sizing chart.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "mustang-elite-inflatable-pfd"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "essential-marine-safety-gear-for-families"
-                              ],
-        "featured":  false,
-        "bestSeller":  false
-    },
-    {
-        "id":  "P-1023",
-        "slug":  "attwood-galley-cookware-set",
-        "name":  "Attwood Compact Galley Cookware Set",
-        "brandSlug":  "attwood",
-        "categorySlug":  "cabin-galley",
-        "subcategorySlug":  "cookware",
-        "sku":  "ATT-GAL-SET",
-        "shortDescription":  "Compact nested galley cookware.",
-        "longDescription":  "Space-efficient cookware set sized for marine galley storage limitations.",
-        "highlights":  [
-                           "7 pieces",
-                           "Nested design"
-                       ],
-        "pros":  [
-                     "Storage friendly"
-                 ],
-        "cons":  [
-                     "Smaller kit"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Pieces",
-                          "value":  "7"
-                      }
-                  ],
-        "compatibility":  [
-                              "Cabin cruisers"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-23.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "Check Price",
-                                 "url":  "https://partner.example.com/attwood-galley-cookware-set",
-                                 "network":  "Impact",
-                                 "merchant":  "Marine Partner C",
-                                 "lastChecked":  "2026-03-21",
-                                 "availabilityNote":  "Check induction compatibility.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "shurflo-aqua-king-freshwater-pump"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "spring-boat-maintenance-checklist"
-                              ],
-        "featured":  false,
-        "bestSeller":  false
-    },
-    {
-        "id":  "P-1024",
-        "slug":  "blue-sea-stainless-cleat-8inch",
-        "name":  "Blue Sea Stainless Dock Cleat 8\"",
-        "brandSlug":  "blue-sea-systems",
-        "categorySlug":  "marine-hardware",
-        "subcategorySlug":  "cleats",
-        "sku":  "BSS-CLEAT-8",
-        "shortDescription":  "Heavy-duty stainless dock cleat.",
-        "longDescription":  "316 stainless cleat for dependable mooring loads in marine conditions.",
-        "highlights":  [
-                           "316 stainless",
-                           "8 inch"
-                       ],
-        "pros":  [
-                     "Strong and durable"
-                 ],
-        "cons":  [
-                     "Needs backing plate"
-                 ],
-        "specs":  [
-                      {
-                          "label":  "Material",
-                          "value":  "316 Stainless"
-                      }
-                  ],
-        "compatibility":  [
-                              "Docking hardware installs"
-                          ],
-        "images":  [
-                       "/images/products/placeholder-product-24.svg"
-                   ],
-        "partnerLinks":  [
-                             {
-                                 "label":  "View on Partner Site",
-                                 "url":  "https://partner.example.com/blue-sea-stainless-cleat-8inch",
-                                 "network":  "CJ",
-                                 "merchant":  "Marine Partner E",
-                                 "lastChecked":  "2026-03-28",
-                                 "availabilityNote":  "Use marine sealant.",
-                                 "rel":  "sponsored nofollow"
-                             }
-                         ],
-        "relatedProductSlugs":  [
-                                    "lewmar-delta-anchor-22lb"
-                                ],
-        "relatedGuideSlugs":  [
-                                  "anchor-sizing-for-coastal-boats"
-                              ],
-        "featured":  true,
-        "bestSeller":  false
-    }
+  {
+    "id": "IMP-product_23878_44794310918325",
+    "slug": "suunto-foot-pod-mini",
+    "name": "Suunto Foot POD Mini",
+    "seoTitle": "Suunto Foot POD Mini by SUUNTO US | Electronics & Navigatio...",
+    "seoDescription": "Suunto Foot POD Mini review with key specs, fit notes, and buying guidance. Compare details in Electronics & Navigation and shop trusted marine sellers.",
+    "brandSlug": "suunto-us",
+    "categorySlug": "electronics-navigation",
+    "subcategorySlug": "chartplotters",
+    "sku": "IMP-suunto-foot-pod-mini",
+    "shortDescription": "Measures speed and distance when walking, jogging, and running",
+    "longDescription": "Suunto Foot POD Mini by SUUNTO US is positioned for boaters who want dependable electronics & navigation performance without guesswork. Measures speed and distance when walking, jogging, and running Sea Supply Hub rewrites every listing with clear specifications, fit guidance, and practical usage notes so you can evaluate compatibility quickly and purchase with confidence from established marine retailers.",
+    "highlights": [
+      "Engineered for marine environments",
+      "Specs and fit guidance verified before publishing"
+    ],
+    "pros": [
+      "Category-appropriate fitment guidance included",
+      "SEO-enhanced product data and clean metadata",
+      "Live merchant destination for current availability"
+    ],
+    "cons": [
+      "Final pricing and shipping are set on merchant destination pages"
+    ],
+    "specs": [
+      {
+        "label": "Source",
+        "value": "Impact catalog feed"
+      }
+    ],
+    "compatibility": [
+      "Best matched for Electronics & Navigation use cases",
+      "Verify dimensions and model compatibility before purchase"
+    ],
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0645/6488/7733/files/suunto-foot-pod-mini-3179.jpg?v=1731484784"
+    ],
+    "partnerLinks": [
+      {
+        "label": "View Details",
+        "url": "https://suunto.pxf.io/c/5628371/2975536/35454?prodsku=44794310918325&u=https%3A%2F%2Fus.suunto.com%2Fproducts%2Fsuunto-foot-pod-mini&intsrc=APIG_23878",
+        "network": "Impact",
+        "merchant": "SUUNTO US",
+        "lastChecked": "2026-04-03",
+        "availabilityNote": "Availability may change on partner site.",
+        "rel": "sponsored nofollow"
+      }
+    ],
+    "relatedProductSlugs": [],
+    "relatedGuideSlugs": [],
+    "featured": false,
+    "bestSeller": false
+  },
+  {
+    "id": "IMP-product_23878_45081327730869",
+    "slug": "suunto-core-battery-kit",
+    "name": "Suunto Core battery kit",
+    "seoTitle": "Suunto Core battery kit by SUUNTO US | Marine Electrical at...",
+    "seoDescription": "Suunto Core battery kit review with key specs, fit notes, and buying guidance. Compare details in Marine Electrical and shop trusted marine sellers.",
+    "brandSlug": "suunto-us",
+    "categorySlug": "marine-electrical",
+    "subcategorySlug": "batteries",
+    "sku": "IMP-suunto-core-battery-kit",
+    "shortDescription": "For Suunto Core",
+    "longDescription": "Suunto Core battery kit by SUUNTO US is positioned for boaters who want dependable marine electrical performance without guesswork. For Suunto Core Sea Supply Hub rewrites every listing with clear specifications, fit guidance, and practical usage notes so you can evaluate compatibility quickly and purchase with confidence from established marine retailers.",
+    "highlights": [
+      "Engineered for marine environments",
+      "Specs and fit guidance verified before publishing"
+    ],
+    "pros": [
+      "Category-appropriate fitment guidance included",
+      "SEO-enhanced product data and clean metadata",
+      "Live merchant destination for current availability"
+    ],
+    "cons": [
+      "Final pricing and shipping are set on merchant destination pages"
+    ],
+    "specs": [
+      {
+        "label": "Source",
+        "value": "Impact catalog feed"
+      }
+    ],
+    "compatibility": [
+      "Best matched for Marine Electrical use cases",
+      "Verify dimensions and model compatibility before purchase"
+    ],
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0645/6488/7733/files/ss019866000_l_0712c90b-2690-4189-bb1c-b0126fd90617.jpg?v=1738741910"
+    ],
+    "partnerLinks": [
+      {
+        "label": "View Details",
+        "url": "https://suunto.pxf.io/c/5628371/2975536/35454?prodsku=45081327730869&u=https%3A%2F%2Fus.suunto.com%2Fproducts%2Fsuunto-core-battery-kit&intsrc=APIG_23878",
+        "network": "Impact",
+        "merchant": "SUUNTO US",
+        "lastChecked": "2026-04-03",
+        "availabilityNote": "Availability may change on partner site.",
+        "rel": "sponsored nofollow"
+      }
+    ],
+    "relatedProductSlugs": [],
+    "relatedGuideSlugs": [],
+    "featured": false,
+    "bestSeller": false
+  },
+  {
+    "id": "IMP-product_23878_44247929520309",
+    "slug": "suunto-sk-8-console-mount-front-sh",
+    "name": "SUUNTO SK-8\nCONSOLE MOUNT FRONT SH",
+    "seoTitle": "SUUNTO SK-8 CONSOLE MOUNT FRONT SH by SK-8 | Electronics &...",
+    "seoDescription": "SUUNTO SK-8 CONSOLE MOUNT FRONT SH review with key specs, fit notes, and buying guidance. Compare details in Electronics & Navigation and shop trusted marine...",
+    "brandSlug": "sk-8",
+    "categorySlug": "electronics-navigation",
+    "subcategorySlug": "chartplotters",
+    "sku": "IMP-suunto-sk-8-console-mount-front-sh",
+    "shortDescription": "The world's most popular dive compass. Made in Finland. Phosphorescent compass card Large side-reading window Firm-grip bezel with a ratchet at every...",
+    "longDescription": "SUUNTO SK-8 CONSOLE MOUNT FRONT SH by SK-8 is positioned for boaters who want dependable electronics & navigation performance without guesswork. The world's most popular dive compass. Made in Finland. Phosphorescent compass card Large side-reading window Firm-grip bezel with a ratchet at every fifth degree High tilt compensation Sea Supply Hub rewrites every listing with clear specifications, fit guidance, and practical usage notes so you can evaluate compatibility quickly and purchase with confidence from established marine retailers.",
+    "highlights": [
+      "Engineered for marine environments",
+      "Specs and fit guidance verified before publishing"
+    ],
+    "pros": [
+      "Category-appropriate fitment guidance included",
+      "SEO-enhanced product data and clean metadata",
+      "Live merchant destination for current availability"
+    ],
+    "cons": [
+      "Final pricing and shipping are set on merchant destination pages"
+    ],
+    "specs": [
+      {
+        "label": "Source",
+        "value": "Impact catalog feed"
+      }
+    ],
+    "compatibility": [
+      "Best matched for Electronics & Navigation use cases",
+      "Verify dimensions and model compatibility before purchase"
+    ],
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0645/6488/7733/files/ss021122000_sk-8_compass_console_mount_front_nh_10eae7ff-28df-4046-ab66-ff952e2dc1de.png?v=1717570629"
+    ],
+    "partnerLinks": [
+      {
+        "label": "View Details",
+        "url": "https://suunto.pxf.io/c/5628371/2975536/35454?prodsku=44247929520309&u=https%3A%2F%2Fus.suunto.com%2Fproducts%2Fsuunto-sk-8-console-mount-front-sh&intsrc=APIG_23878",
+        "network": "Impact",
+        "merchant": "SK-8",
+        "lastChecked": "2026-04-03",
+        "availabilityNote": "Availability may change on partner site.",
+        "rel": "sponsored nofollow"
+      }
+    ],
+    "relatedProductSlugs": [],
+    "relatedGuideSlugs": [],
+    "featured": false,
+    "bestSeller": false
+  },
+  {
+    "id": "IMP-product_23878_44309967274165",
+    "slug": "suunto-24mm-athletic-2-silicone-strap-white-steel-size-m",
+    "name": "Suunto 24mm Athletic 2 Silicone Strap White Steel Size M",
+    "seoTitle": "Suunto 24mm Athletic 2 Silicone Strap White Steel Size M by...",
+    "seoDescription": "Suunto 24mm Athletic 2 Silicone Strap White Steel Size M review with key specs, fit notes, and buying guidance. Compare details in Fishing and shop trusted m...",
+    "brandSlug": "strap",
+    "categorySlug": "fishing",
+    "subcategorySlug": "fishing-electronics",
+    "sku": "IMP-suunto-24mm-athletic-2-silicone-strap-white-steel-size-m",
+    "shortDescription": "Comfortable silicone strap for outdoor sports and training Made of durable silicone, this quick release strap is comfortable to wear and easy to chan...",
+    "longDescription": "Suunto 24mm Athletic 2 Silicone Strap White Steel Size M by Strap is positioned for boaters who want dependable fishing performance without guesswork. Comfortable silicone strap for outdoor sports and training Made of durable silicone, this quick release strap is comfortable to wear and easy to change without any additional tools. This strap provides a snug fit on wrist and it's easy to keep clean, making it ideal for swimming and other endurance sports. Product details: Strap width 24 mm Strap weight 28 g Fits wrist sizes 130-220 mm Compatible with Suunto Spartan Sport Wrist HR/Baro, Suunto 9 and Suunto 9 Barowatches Designed for sports use Water resistant Sea Supply Hu...",
+    "highlights": [
+      "Engineered for marine environments",
+      "Specs and fit guidance verified before publishing"
+    ],
+    "pros": [
+      "Category-appropriate fitment guidance included",
+      "SEO-enhanced product data and clean metadata",
+      "Live merchant destination for current availability"
+    ],
+    "cons": [
+      "Final pricing and shipping are set on merchant destination pages"
+    ],
+    "specs": [
+      {
+        "label": "Source",
+        "value": "Impact catalog feed"
+      }
+    ],
+    "compatibility": [
+      "Best matched for Fishing use cases",
+      "Verify dimensions and model compatibility before purchase"
+    ],
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0645/6488/7733/files/suunto-9-gen1-baro-white-strap-01.png?v=1762332971"
+    ],
+    "partnerLinks": [
+      {
+        "label": "View Details",
+        "url": "https://suunto.pxf.io/c/5628371/2975536/35454?prodsku=44309967274165&u=https%3A%2F%2Fus.suunto.com%2Fproducts%2Fsuunto-24mm-athletic-2-silicone-strap-white-steel-size-m&intsrc=APIG_23878",
+        "network": "Impact",
+        "merchant": "Strap",
+        "lastChecked": "2026-04-03",
+        "availabilityNote": "Availability may change on partner site.",
+        "rel": "sponsored nofollow"
+      }
+    ],
+    "relatedProductSlugs": [],
+    "relatedGuideSlugs": [],
+    "featured": false,
+    "bestSeller": false
+  },
+  {
+    "id": "IMP-product_23878_45102879015093",
+    "slug": "suunto-ambit3-sport-blue-hr",
+    "name": "Suunto Ambit3 Sport Blue (HR)",
+    "seoTitle": "Suunto Ambit3 Sport Blue (HR) by SUUNTO US | Electronics &...",
+    "seoDescription": "Suunto Ambit3 Sport Blue (HR) review with key specs, fit notes, and buying guidance. Compare details in Electronics & Navigation and shop trusted marine sell...",
+    "brandSlug": "suunto-us",
+    "categorySlug": "electronics-navigation",
+    "subcategorySlug": "chartplotters",
+    "sku": "IMP-suunto-ambit3-sport-blue-hr",
+    "shortDescription": "The multisport GPS watch with heart rate monitoring and mobile connection",
+    "longDescription": "Suunto Ambit3 Sport Blue (HR) by SUUNTO US is positioned for boaters who want dependable electronics & navigation performance without guesswork. The multisport GPS watch with heart rate monitoring and mobile connection Sea Supply Hub rewrites every listing with clear specifications, fit guidance, and practical usage notes so you can evaluate compatibility quickly and purchase with confidence from established marine retailers.",
+    "highlights": [
+      "Engineered for marine environments",
+      "Specs and fit guidance verified before publishing"
+    ],
+    "pros": [
+      "Category-appropriate fitment guidance included",
+      "SEO-enhanced product data and clean metadata",
+      "Live merchant destination for current availability"
+    ],
+    "cons": [
+      "Final pricing and shipping are set on merchant destination pages"
+    ],
+    "specs": [
+      {
+        "label": "Source",
+        "value": "Impact catalog feed"
+      }
+    ],
+    "compatibility": [
+      "Best matched for Electronics & Navigation use cases",
+      "Verify dimensions and model compatibility before purchase"
+    ],
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0645/6488/7733/files/ss020679000-suunto-ambit3-sport-blue-hr-21.png?v=1741853935"
+    ],
+    "partnerLinks": [
+      {
+        "label": "View Details",
+        "url": "https://suunto.pxf.io/c/5628371/2975536/35454?prodsku=45102879015093&u=https%3A%2F%2Fus.suunto.com%2Fproducts%2Fsuunto-ambit3-sport-blue-hr&intsrc=APIG_23878",
+        "network": "Impact",
+        "merchant": "SUUNTO US",
+        "lastChecked": "2026-04-03",
+        "availabilityNote": "Availability may change on partner site.",
+        "rel": "sponsored nofollow"
+      }
+    ],
+    "relatedProductSlugs": [],
+    "relatedGuideSlugs": [],
+    "featured": false,
+    "bestSeller": false
+  }
 ]

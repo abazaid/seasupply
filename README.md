@@ -28,6 +28,8 @@ npm run lint
 npm run build
 npm run start
 npm run format
+npm run impact:import:dry
+npm run impact:import:test
 ```
 
 ## Environment
@@ -50,6 +52,26 @@ Copy `.env.example` to `.env.local` and update values.
 
 - `data/seed/*.json` contains categories, products, brands, articles, FAQs.
 - `data/loaders.ts` validates and hydrates seed data with Zod.
+
+## Impact Catalog Import (Test 5 Products)
+
+1. Add these variables in `.env.local` (or Coolify environment):
+   - `IMPACT_ACCOUNT_SID`
+   - `IMPACT_AUTH_TOKEN`
+   - `IMPACT_API_BASE_URL` (default `https://api.impact.com`)
+   - `IMPACT_IMPORT_LIMIT` (default `5`)
+   - Optional targeting filters:
+   - `IMPACT_MERCHANT_ALLOWLIST=garmin,simrad,west marine`
+   - `IMPACT_KEYWORD_ALLOWLIST=marine,boat,outboard,navigation,safety`
+2. Run dry test:
+   - `npm run impact:import:dry`
+3. Import and replace current demo products with 5 catalog products:
+   - `npm run impact:import:test`
+
+Notes:
+- The importer creates a product backup in `data/seed/backups/`.
+- Product content is rewritten with SEO-focused title/description and category mapping.
+- New brands are added automatically to `data/seed/brands.json` if missing.
 
 ## marketplace model
 

@@ -241,5 +241,29 @@
     "logoText": "SHAKESPEARE",
     "featured": false,
     "logoUrl": "/brands/shakespeare.svg"
+  },
+  {
+    "slug": "suunto-us",
+    "name": "Suunto Us",
+    "description": "Imported brand profile from Impact catalog feed.",
+    "website": "https://impact.com",
+    "logoText": "SUUNTO-US",
+    "featured": false
+  },
+  {
+    "slug": "sk-8",
+    "name": "Sk 8",
+    "description": "Imported brand profile from Impact catalog feed.",
+    "website": "https://impact.com",
+    "logoText": "SK-8",
+    "featured": false
+  },
+  {
+    "slug": "strap",
+    "name": "Strap",
+    "description": "Imported brand profile from Impact catalog feed.",
+    "website": "https://impact.com",
+    "logoText": "STRAP",
+    "featured": false
   }
 ]

@@ -45,6 +45,8 @@ export interface Product {
   id: string;
   slug: string;
   name: string;
+  seoTitle?: string;
+  seoDescription?: string;
   brandSlug: string;
   categorySlug: string;
   subcategorySlug: string;

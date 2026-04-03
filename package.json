@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "impact:import:test": "node scripts/import-impact.mjs --replace-all",
+    "impact:import:dry": "node scripts/import-impact.mjs --replace-all --dry-run"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
